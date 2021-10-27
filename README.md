@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Apuntes proyecto Landing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Reto vacante FrontEnd
 
-## Available Scripts
+Implementar el frontend de la sección de proyectos desde una propuesta de la diseñadora:
 
-In the project directory, you can run:
+* Proyecto debe utilizar Mapbox (library?) para asi poder mostrar los proyectos
+* Utilizar Hoghcharts para mostrar los datos que creas más conveniente del proyecto (?)
+* Seguir el diseño entregado
 
-### `npm start`
+Requerimientos técnicos:
+* Maquetado en HTML y CSS utilizando SASS
+* Componentes con ReactJS
+* Media Queries para dos tamaños (destok y mobile)
+* Consumo de API y muestra de información dinámica
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Consumo del API 
+* https://fieldops-api.toroto.mx/api/projects
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Presentación del reto 
 
-### `npm test`
+Presentación:
+* Presentación personal
+* ¿Cúal fue la manera de atacar el reto?
+* Aplicación de ReactJS corriendo localmente con la maqueta de UI representada en componentes
+* Un vistazo rapido del codigo y la estructura de la aplicación
+* Conclusiones y lecciones del reto. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Cosiderar:
+* Ver ambas versiones destok y mobile
+* Debe tener mediaQueries 
+* Subir a Github, REadme con los detalles de la aplicación.
+* 20 min para presentar
 
-### `npm run build`
+Criterios de la evaluación:
+* Puntualidad y buen manejo de tiempos: 5 pts
+* Fluidez en presentación: 5 pts
+* Presentación personal: 5pts
+* Maquetado apegado a prototipo: 15 pts
+* Componentes en ReactJS: 15 pts
+* Consumo de API de proyectos: 10 pts
+* Vista de todos los proyectos con Mapbox: 20 pts
+* Vista de proyecto individual: 15 pts
+* Adaptación a versión mobile: 10 pts
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Además:
+* Se evaluaran las competencias soft como la de hablar en publico, liderazgo y resolucion de problemas
