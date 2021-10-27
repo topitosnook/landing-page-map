@@ -45,3 +45,7 @@ Criterios de la evaluación:
 
 Además:
 * Se evaluaran las competencias soft como la de hablar en publico, liderazgo y resolucion de problemas
+
+## Links del diseño
+* desktop: https://www.figma.com/proto/07Q05oNS2JgTDgvNx2VeqL/Reto-Vacante-Frontend?node-id=369%3A1083&scaling=min-zoom&page-id=369%3A1028&starting-point-node-id=369%3A1083
+* mobile: https://www.figma.com/proto/07Q05oNS2JgTDgvNx2VeqL/Reto-Vacante-Frontend?node-id=338%3A1536&scaling=scale-down&page-id=0%3A1&starting-point-node-id=338%3A1536
