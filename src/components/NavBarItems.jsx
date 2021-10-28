@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function NavigationLinks() {
+export default function NavNBarItems() {
   return (
     <div>
       

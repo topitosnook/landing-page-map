@@ -1,38 +1,95 @@
-// .App {
-//   text-align: center;
-// }
+@import './variables/variables';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-// .App-logo {
-//   height: 40vmin;
-//   pointer-events: none;
-// }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
 
-// @media (prefers-reduced-motion: no-preference) {
-//   .App-logo {
-//     animation: App-logo-spin infinite 20s linear;
-//   }
-// }
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 56px;
+  padding: 0px 200px 0px 200px;
+  background-color: $torotoBlue;
+  color: $torotoWhite;
+}
+.navLinks {
+  display: flex;
+  justify-content: end;
+  align-items: centers;
+  list-style: none;
+  li {
+    text-decoration: none;
+    color: $torotoWhite;
+    font-weight: normal;
+    font-size: 14px;
+    margin: 0 8px 0 28px;
+    width: 122px;
+    height: 16px;
+  }
+}
+.contacto {
+  width: 114px;
+  height: 32px;
+  // padding: 8px 16px 8px 16px;
+  border: 1px solid $torotoWhite;
+  border-radius: 10px;
+  text-align: center;
 
-// .App-header {
-//   background-color: #282c34;
-//   min-height: 100vh;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   font-size: calc(10px + 2vmin);
-//   color: white;
-// }
+  // background-color: $torotoWhite;
+  // color: $torotBlack;
+}
 
-// .App-link {
-//   color: #61dafb;
-// }
+.logo {
+  font-size: 30px;
+}
 
-// @keyframes App-logo-spin {
-//   from {
-//     transform: rotate(0deg);
-//   }
-//   to {
-//     transform: rotate(360deg);
-//   }
-// }
+.mobile-menu-icon {
+  display: none;
+}
+@media screen and (max-width: 780px) {
+  .logo {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 35%;
+  }
+  .navLinks {
+    display: none;
+  }
+  .navLinksMobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: $torotoBlue;
+    right: 0;
+    top: 75px;
+    transition: all 0.5s ease-out;
+    width: 100%;
+    li {
+      color: $torotoWhite;
+      text-align: center;
+      padding: 32px;
+      width: 100%;
+      transition: all 0.5s ease;
+    }
+    .contacto {
+      border: none;
+    }
+  }
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    color: $torotoWhite;
+    background-color: $torotoBlue;
+    border: none;
+    outline: none;
+    top: 15px;
+    left: 25px;
+  }
+}
