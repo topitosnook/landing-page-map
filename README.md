@@ -5,7 +5,7 @@
 Implementar el frontend de la sección de proyectos desde una propuesta de la diseñadora:
 
 * Proyecto debe utilizar Mapbox (library?) para asi poder mostrar los proyectos
-* Utilizar Hoghcharts para mostrar los datos que creas más conveniente del proyecto (?)
+* Utilizar Highcharts para mostrar los datos que creas más conveniente del proyecto (?)
 * Seguir el diseño entregado
 
 Requerimientos técnicos:
