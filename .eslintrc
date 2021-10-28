@@ -12,7 +12,7 @@
         "ecmaFeatures": {
             "jsx": true
         },
-        "ecmaVersion": 13,
+        "ecmaVersion": "latest",
         "sourceType": "module"
     },
     "plugins": [
@@ -22,7 +22,7 @@
     "rules": {
         "indent": [
             "error",
-            4
+            2
         ],
         "linebreak-style": [
             "error",
