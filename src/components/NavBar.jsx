@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/icons/svg/logo.svg';
 
 export default function NavBar() {
   const [isMobile, setIsMobile] = useState(false);
   return (
     <nav className='navbar'>
-      <h3 className='logo'>TOROTO</h3>
+      <div>
+        <img src={logo} alt='Toroto' />
+      </div>
       <ul className={isMobile ? 'navLinksMobile' : 'navLinks'} onClick={() => setIsMobile(true)}>
         <Link to='/' className='proyectos'>
           <li>PROYECTOS</li>

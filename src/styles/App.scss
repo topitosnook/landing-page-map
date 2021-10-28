@@ -7,41 +7,45 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
-
+//---------------------------------------------------
+//NAVBAR
 .navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 56px;
-  padding: 0px 200px 0px 200px;
   background-color: $torotoBlue;
   color: $torotoWhite;
 }
 .navLinks {
+  text-align: center;
   display: flex;
   justify-content: end;
-  align-items: centers;
+  align-items: center;
   list-style: none;
-  li {
-    text-decoration: none;
-    color: $torotoWhite;
-    font-weight: normal;
-    font-size: 14px;
-    margin: 0 8px 0 28px;
-    width: 122px;
-    height: 16px;
-  }
 }
+
+.proyectos,
+.sobreToroto,
+.blog,
+.metaRegistro,
 .contacto {
-  width: 114px;
-  height: 32px;
-  // padding: 8px 16px 8px 16px;
+  text-decoration: none;
+  color: $torotoWhite;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 0 8px;
+  width: 122px;
+  height: 16px;
+}
+
+.contacto {
   border: 1px solid $torotoWhite;
   border-radius: 10px;
-  text-align: center;
-
-  // background-color: $torotoWhite;
-  // color: $torotBlack;
+  width: 114px;
+  height: 32px;
+  background-color: $torotoWhite;
+  color: $torotoBlack;
 }
 
 .logo {
@@ -52,12 +56,12 @@
   display: none;
 }
 @media screen and (max-width: 780px) {
-  .logo {
-    display: flex;
-    position: absolute;
-    top: 15px;
-    left: 35%;
-  }
+  // .logo {
+  //   display: flex;
+  //   position: absolute;
+  //   top: 15px;
+  //   left: 35%;
+  // }
   .navLinks {
     display: none;
   }
@@ -92,4 +96,85 @@
     top: 15px;
     left: 25px;
   }
+}
+//-----------------------------------------------------
+//Footer
+.mainFooter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 112px;
+  background-color: $torotoBlue;
+  color: $torotoWhite;
+  position: relative;
+  bottom: 0;
+}
+.redesSociales {
+  img {
+    margin: 10px;
+  }
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.content-wrap {
+  flex: 1;
+}
+//-----------------------------------------------------------
+// map section
+
+.containerMap {
+  height: 748px;
+  background-color: $torotoGrey3;
+}
+.mapOverlay {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.intro {
+  // height: 300px;
+  width: 336px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 10px;
+  text-align: justify;
+  flex: 1;
+}
+
+.moreProjects {
+  height: 50px;
+  width: 100%;
+  background-color: $torotoGrey2;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  flex: none;
+  // align-self: flex-end;
+}
+
+//------------------------------------------------------------
+// project section
+.projectSection {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8%;
+}
+.projectCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.projectCard {
+  width: 512px;
+  height: 544px; //172 + 372
+  background-color: $torotoGrey3;
 }

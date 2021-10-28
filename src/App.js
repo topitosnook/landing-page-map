@@ -6,7 +6,6 @@ import ReactMapGL, { Marker, Popup } from 'react-map-gl';
 import * as parkData from './data/skateboard-parks.json';
 import LandingPage from './views/LandingPage';
 
-
 export default function App() {
 
   // const [dataProjects, setDataProjects] = useState();
