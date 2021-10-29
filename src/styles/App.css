@@ -5,6 +5,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
 
 .navbar {
@@ -16,9 +17,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   height: 56px;
   background-color: #1a30db;
   color: #ffffff;
+  position: fixed;
 }
 
 .navLinks {
@@ -140,6 +143,7 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  margin-top: 56px;
 }
 
 .containerMap {
@@ -223,6 +227,63 @@
 .projectCard {
   width: 512px;
   height: 544px;
-  background-color: #BDBDBD;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.projectCover img {
+  width: 512px;
+  height: 172px;
+  border-radius: 20px 20px 0 0;
+}
+
+.projectInfoCover {
+  width: 448px;
+  margin: 24px 32px 0 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.buttonMore {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #373737;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.buttonMore:hover {
+  cursor: pointer;
+}
+
+.serviceTags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.tagItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #373737;
+  border-radius: 18px;
+  padding: 5px;
+  margin: 0 3px 0 3px;
 }
 /*# sourceMappingURL=App.css.map */

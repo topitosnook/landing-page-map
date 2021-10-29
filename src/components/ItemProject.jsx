@@ -1,15 +1,42 @@
 import React from 'react';
+import imgProject1 from '../assets/img/img_project_1.png';
+import imgProject2 from '../assets/img/img_project_2.png';
+import imgProject3 from '../assets/img/img_project_3.png';
+import imgProject4 from '../assets/img/img_project_4.png';
+import ButtonSeeProject from './ButtonSeeProject';
+import ItemTag from './ItemTag';
 
-export default function ItemProject() {
+export default function ItemProject({ project, index }) {
+  let imageCover;
+  switch (index) {
+  case 0:
+    imageCover = imgProject1;
+    break;
+  case 1:
+    imageCover = imgProject2;
+    break;
+  case 2:
+    imageCover = imgProject3;
+    break;
+  case 3:
+    imageCover = imgProject4;
+    break;
+  }
+
   return (
-    <section className="projectCard">
-      <div>Imagen</div>
-      <div>
-        <p>Region</p>
-        <h2>Nombre del proyecto en escrito en dos lineas, lo que sea</h2>
-        <p>info del proyecto</p>
-        <div>tags</div>
-        <button>Ver proyecto completo</button>
+    <section className='projectCard'>
+      <div className='projectCover'>
+        <img src={imageCover} alt='Lugar del proyecto' />
+      </div>
+      <div className='projectInfoCover'>
+        <p>{project.location}</p>
+        <h2>{project.name}</h2>
+        <p>{project.description}</p>
+        <div className="serviceTags">
+          <ItemTag name={'Servicio'} />
+          <ItemTag name={'Servicio'} />
+        </div>
+        <ButtonSeeProject name={'VER PROYECTO COMPLETO'} />
       </div>
     </section>
   );
