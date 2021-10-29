@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+//---------------------------------------------------
+//NAVBAR
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  background-color: $torotoBlue;
+  color: $torotoWhite;
+  position: fixed;
+}
+.navLinks {
+  text-align: center;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  list-style: none;
+}
+
+.proyectos,
+.sobreToroto,
+.blog,
+.metaRegistro,
+.contacto {
+  text-decoration: none;
+  color: $torotoWhite;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 0 8px;
+  width: 122px;
+  height: 16px;
+}
+
+.contacto {
+  border: 1px solid $torotoWhite;
+  border-radius: 10px;
+  width: 114px;
+  height: 32px;
+  background-color: $torotoWhite;
+  color: $torotoBlack;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+@media screen and (max-width: 780px) {
+  // .logo {
+  //   display: flex;
+  //   position: absolute;
+  //   top: 15px;
+  //   left: 35%;
+  // }
+  .navLinks {
+    display: none;
+  }
+  .navLinksMobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: $torotoBlue;
+    right: 0;
+    top: 75px;
+    transition: all 0.5s ease-out;
+    width: 100%;
+    li {
+      color: $torotoWhite;
+      text-align: center;
+      padding: 32px;
+      width: 100%;
+      transition: all 0.5s ease;
+    }
+    .contacto {
+      border: none;
+    }
+  }
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    color: $torotoWhite;
+    background-color: $torotoBlue;
+    border: none;
+    outline: none;
+    top: 15px;
+    left: 25px;
+  }
+}

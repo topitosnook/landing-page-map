@@ -1,0 +1,84 @@
+//------------------------------------------------------------
+// project section
+.projectSection {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8%;
+}
+.projectCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.projectCard {
+  width: 512px;
+  height: 544px; //172 + 372
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.projectCover {
+  img {
+    width: 512px;
+    height: 172px;
+    border-radius: 20px 20px 0 0;
+  }
+}
+.projectInfoCover {
+  width: 448px;
+  height: 322px;
+  margin: 24px 32px 0 32px;
+  // display: flex;
+  // flex-direction: column;
+  // gap: 20px;
+  // position: relative;
+  //   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.buttonMore {
+  width: 100%;
+  height: 48px;
+  border: 1px solid $torotoBlack;
+  background-color: $torotoWhite;
+  border-radius: 10px;
+  // position:absolute;
+  //   bottom: 0;
+  //   left: 0%;
+  //   right: 0%;
+  //   text-align: center;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.serviceTags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top:5px;
+}
+
+.tagItem {
+  display: flex;
+  align-items: center;
+  border: 1px solid $torotoBlack;
+  border-radius: 18px;
+  padding: 5px;
+  margin: 0 3px 0 3px;
+}
+
+.info{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  line-height: 1.6;
+}
