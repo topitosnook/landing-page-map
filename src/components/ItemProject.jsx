@@ -29,12 +29,14 @@ export default function ItemProject({ project, index }) {
         <img src={imageCover} alt='Lugar del proyecto' />
       </div>
       <div className='projectInfoCover'>
-        <p>{project.location}</p>
-        <h2>{project.name}</h2>
-        <p>{project.description}</p>
-        <div className="serviceTags">
-          <ItemTag name={'Servicio'} />
-          <ItemTag name={'Servicio'} />
+        <div className='info'>
+          <p>{project.location}</p>
+          <h2>{project.name}</h2>
+          <p>{project.description}</p>
+          <div className='serviceTags'>
+            <ItemTag name={'Servicio'} />
+            <ItemTag name={'Servicio'} />
+          </div>
         </div>
         <ButtonSeeProject name={'VER PROYECTO COMPLETO'} />
       </div>

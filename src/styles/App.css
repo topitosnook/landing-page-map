@@ -160,6 +160,10 @@
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .intro {
@@ -240,6 +244,7 @@
 
 .projectInfoCover {
   width: 448px;
+  height: 322px;
   margin: 24px 32px 0 32px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -248,7 +253,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .buttonMore {
@@ -272,6 +279,7 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin-top: 5px;
 }
 
 .tagItem {
@@ -285,5 +293,20 @@
   border-radius: 18px;
   padding: 5px;
   margin: 0 3px 0 3px;
+}
+
+.info {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  line-height: 1.6;
 }
 /*# sourceMappingURL=App.css.map */

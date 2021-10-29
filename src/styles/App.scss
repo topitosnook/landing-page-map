@@ -124,7 +124,7 @@
 }
 .content-wrap {
   flex: 1;
-  margin-top:56px;
+  margin-top: 56px;
 }
 //-----------------------------------------------------------
 // map section
@@ -137,6 +137,8 @@
   display: flex;
   flex-direction: column;
   position: relative;
+      height: 100%;
+    justify-content: space-between;
 }
 .intro {
   // height: 300px;
@@ -193,10 +195,16 @@
 }
 .projectInfoCover {
   width: 448px;
+  height: 322px;
   margin: 24px 32px 0 32px;
+  // display: flex;
+  // flex-direction: column;
+  // gap: 20px;
+  // position: relative;
+  //   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  justify-content: space-between;
 }
 
 .buttonMore {
@@ -205,6 +213,11 @@
   border: 1px solid $torotoBlack;
   background-color: $torotoWhite;
   border-radius: 10px;
+  // position:absolute;
+  //   bottom: 0;
+  //   left: 0%;
+  //   right: 0%;
+  //   text-align: center;
   &:hover {
     cursor: pointer;
   }
@@ -214,6 +227,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  margin-top:5px;
 }
 
 .tagItem {
@@ -223,4 +237,12 @@
   border-radius: 18px;
   padding: 5px;
   margin: 0 3px 0 3px;
+}
+
+.info{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  line-height: 1.6;
 }
