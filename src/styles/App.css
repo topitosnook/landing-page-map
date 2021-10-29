@@ -5,7 +5,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
 }
 
 .navbar {
@@ -308,5 +307,55 @@
       -ms-flex: 1;
           flex: 1;
   margin-top: 56px;
+}
+
+.impactSection h1 {
+  color: #373737;
+  font-size: 48px;
+}
+
+.impactCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.impactCard {
+  text-align: center;
+}
+
+.nameImpact {
+  font-size: 72px;
+  color: #1a30db;
+}
+
+.valueImpact {
+  font-size: 20px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.imageGallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px;
+}
+
+.gallerySection {
+  text-align: center;
+}
+
+.imageProject img {
+  height: 288px;
+  width: auto;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=App.css.map */

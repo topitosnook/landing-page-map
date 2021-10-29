@@ -1,9 +1,10 @@
 import React from 'react';
 
-export default function BoxImpact() {
+export default function BoxImpact({ impact }) {
   return (
-    <div>
-      
+    <div className="impactCard">
+      <p className='nameImpact'> {impact.value}</p>
+      <p className='valueImpact'>{impact.name}</p>
     </div>
   );
 }

@@ -1,0 +1,41 @@
+.impactSection {
+  h1 {
+    color: $torotoBlack;
+    font-size: 48px;
+  }
+}
+.impactCards {
+  display: flex;
+  justify-content: space-around;
+}
+.impactCard {
+  text-align: center;
+}
+// para cajas de impacto
+.nameImpact {
+  font-size: 72px;
+  color: $torotoBlue;
+}
+.valueImpact {
+  font-size: 20px;
+  color: $torotoGrey1;
+  font-weight: bold;
+  // line-height: 72px;
+}
+.imageGallery{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px;
+}
+.gallerySection{
+  text-align: center;
+}
+.imageProject {
+  img {
+    height: 288px;
+    width: auto;
+    border-radius: 10px;
+  }
+}
