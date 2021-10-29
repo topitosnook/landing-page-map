@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import imgProject1 from '../assets/img/img_project_1.png';
 import imgProject2 from '../assets/img/img_project_2.png';
 import imgProject3 from '../assets/img/img_project_3.png';
@@ -38,7 +39,9 @@ export default function ItemProject({ project, index }) {
             <ItemTag name={'Servicio'} />
           </div>
         </div>
-        <ButtonSeeProject name={'VER PROYECTO COMPLETO'} />
+        <Link to={'/' + project.id}>
+          <ButtonSeeProject name={'VER PROYECTO COMPLETO'} />
+        </Link>
       </div>
     </section>
   );

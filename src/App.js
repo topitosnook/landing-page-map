@@ -5,6 +5,7 @@ import mapboxgl from 'mapbox-gl';
 import ReactMapGL, { Marker, Popup } from 'react-map-gl';
 import * as parkData from './data/skateboard-parks.json';
 import LandingPage from './views/LandingPage';
+import ProjectView from './views/ProjectView';
 
 export default function App() {
 
@@ -25,7 +26,15 @@ export default function App() {
     <Router>
       {
         dataProjects &&
-        <LandingPage dataProjects={dataProjects}/>
+        <Switch>
+          <Route path='/' exact>
+            <LandingPage dataProjects={dataProjects} />
+          </Route>
+          <Route path='/:id'>
+            <ProjectView dataProjects={dataProjects}/>
+          </Route>
+        </Switch>
+
       }
     </Router>
   );
