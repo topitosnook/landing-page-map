@@ -27,9 +27,9 @@ Presentación:
 * Conclusiones y lecciones del reto. 
 
 Cosiderar:
-* Ver ambas versiones destok y mobile
+* Ver ambas versiones desktop y mobile
 * Debe tener mediaQueries 
-* Subir a Github, REadme con los detalles de la aplicación.
+* Subir a Github, Readme con los detalles de la aplicación.
 * 20 min para presentar
 
 Criterios de la evaluación:
