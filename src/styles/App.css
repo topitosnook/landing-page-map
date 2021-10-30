@@ -307,6 +307,7 @@
       -ms-flex: 1;
           flex: 1;
   margin-top: 56px;
+  padding: 0 184px 0 184px;
 }
 
 .impactSection h1 {
@@ -357,5 +358,73 @@
   height: 288px;
   width: auto;
   border-radius: 10px;
+}
+
+.accordionSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top: 1px solid #373737;
+}
+
+.accordion {
+  background-color: #ffffff;
+  color: #373737;
+  cursor: pointer;
+  padding: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  outline: none;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.accordion:hover,
+.accordionTitle {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.accordionIcon {
+  margin-left: auto;
+  -webkit-transition: -webkit-transform 0.6s ease;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+}
+
+.rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.accordionContent {
+  background-color: #ffffff;
+  overflow: hidden;
+  -webkit-transition: max-height 0.6s ease;
+  transition: max-height 0.6s ease;
+}
+
+.accordionText {
+  font-weight: 400;
+  font-size: 14px;
+  padding: 18px;
+}
+
+.chevronAccordion {
+  width: 15px;
+  height: auto;
 }
 /*# sourceMappingURL=App.css.map */

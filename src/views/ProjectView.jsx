@@ -4,6 +4,7 @@ import IntroSection from '../components/IntroSection';
 import NavBar from '../components/NavBar';
 import FirstSectionProject from '../components/FirstSectionProject';
 import BoxImpact from '../components/BoxImpact';
+import Accordion from '../components/Accordion';
 
 export default function ProjectView({ dataProjects }) {
   const projectPath = window.location.pathname.substring(1);
@@ -21,40 +22,42 @@ export default function ProjectView({ dataProjects }) {
       <main className='content-wrap'>
         {data && (
           <>
-            <FirstSectionProject />
+            {/* <FirstSectionProject />
             <section>
               <h1>Problemática</h1>
               <p>{data.problem}</p>
+            </section> */}
+            <section className="activitiesSection">
+              {data.activities.map((data, index) => {
+                return <Accordion key={index} title={data.name} content={data.description} />;
+              })}
             </section>
-            <section>
-              <h1>Implementación</h1>
-              <div>Acordeones de actividades de restauracion</div>
-            </section>
-            <section>
+
+            {/* <section>
               <h2>Mapa de obras</h2>
               <div>Aqui iría la imagen del mapa</div>
-            </section>
-            <section className="gallerySection">
+            </section> */}
+            {/* <section className='gallerySection'>
               <h2>Galeria de imagenes</h2>
-              <div className="imageGallery">
+              <div className='imageGallery'>
                 {data.images.map((image, index) => {
                   return (
-                    <div key={index} className="imageProject">
+                    <div key={index} className='imageProject'>
                       <img src={image} alt='' />
                     </div>
                   );
                 })}
               </div>
-            </section>
-            <section className='impactSection'>
+            </section> */}
+            {/* <section className='impactSection'>
               <h1>Impacto</h1>
               <div className='impactCards'>
                 {data.impact.map((impact, index) => {
                   return <BoxImpact key={index} impact={impact} />;
                 })}
               </div>
-            </section>
-            <IntroSection />
+            </section> */}
+            {/* <IntroSection /> */}
           </>
         )}
       </main>

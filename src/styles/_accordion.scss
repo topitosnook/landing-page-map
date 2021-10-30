@@ -1,0 +1,51 @@
+// .activitiesSection{
+//   margin: 20px;
+// }
+.accordionSection {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid $torotoBlack;
+
+}
+.accordion {
+  background-color: $torotoWhite;
+  color: $torotoBlack;
+  cursor: pointer;
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  outline: none;
+  transition: background-color 0.6s ease;
+}
+.accordion:hover,
+// .active {
+//   background-color: $torotoGrey3;
+// }
+.accordionTitle {
+  font-weight: 600;
+  font-size: 14px;
+}
+.accordionIcon {
+  margin-left: auto;
+  transition: transform 0.6s ease;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+.accordionContent {
+  background-color: $torotoWhite;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+  // max-height: 0;// pasar dinamicamente
+}
+.accordionText {
+  font-weight: 400;
+  font-size: 14px;
+  padding: 18px;
+}
+.chevronAccordion {
+  width: 15px;
+  height: auto;
+}
