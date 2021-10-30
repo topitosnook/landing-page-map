@@ -4,6 +4,7 @@ import facebook from '../assets/icons/svg/facebook_icon.svg';
 import linkedin from '../assets/icons/svg/linkedin_icon.svg';
 import twitter from '../assets/icons/svg/twitter_icon.svg';
 import logo from '../assets/icons/svg/logo.svg';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -14,8 +15,10 @@ export default function Footer() {
         <img src={instagram} alt='Instagram redirect' />
         <img src={twitter} alt='Twitter redirect' />
       </section>
-      <section className='logoFooter'>
-        <img src={logo} alt="Toroto" />
+      <section>
+        <Link to='/'>
+          <img className='logoFooter' src={logo} alt='Toroto' />
+        </Link>
       </section>
     </footer>
   );
