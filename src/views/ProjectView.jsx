@@ -7,16 +7,21 @@ import FirstSectionProject from '../components/FirstSectionProject';
 import BoxImpact from '../components/BoxImpact';
 import Accordion from '../components/Accordion';
 
-export default function ProjectView({ dataProjects }) {
+export default function ProjectView({ dataProjects, images }) {
   const projectPath = window.location.pathname.substring(1);
   const [data, setData] = useState();
+  const [index, setIndex] = useState();
 
   useEffect(() => {
-    dataProjects.data.forEach((project) => {
-      if (project.id == projectPath) setData(project);
+    dataProjects.data.forEach((project, i) => {
+      if (project.id == projectPath) {
+        setIndex(i);
+        setData(project);
+      }
     });
   }, []);
-  console.log(data);
+  // console.log(data);
+  console.log(index);
   return (
     <>
       <MetaDecorator title='Toroto - proyecto' />
@@ -24,17 +29,16 @@ export default function ProjectView({ dataProjects }) {
       <main className='content-wrap'>
         {data && (
           <>
-            {/* <FirstSectionProject />
+            {index!==undefined && <FirstSectionProject data={data} image={images[index]} />}
             <section>
               <h1>Problemática</h1>
               <p>{data.problem}</p>
-            </section> */}
+            </section>
             <section className='activitiesSection'>
               {data.activities.map((data, index) => {
                 return <Accordion key={index} title={data.name} content={data.description} />;
               })}
             </section>
-
             {/* <section>
               <h2>Mapa de obras</h2>
               <div>Aqui iría la imagen del mapa</div>

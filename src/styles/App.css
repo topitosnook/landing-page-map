@@ -365,6 +365,11 @@
   border-radius: 10px;
 }
 
+.imagefirstset {
+  width: 512px;
+  height: 480px;
+}
+
 .accordionSection {
   display: -webkit-box;
   display: -ms-flexbox;
