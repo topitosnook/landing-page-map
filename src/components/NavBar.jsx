@@ -6,7 +6,7 @@ export default function NavBar() {
   const [isMobile, setIsMobile] = useState(false);
   return (
     <nav className='navbar'>
-      <div>
+      <div className="logo">
         <img src={logo} alt='Toroto' />
       </div>
       <ul className={isMobile ? 'navLinksMobile' : 'navLinks'} onClick={() => setIsMobile(true)}>

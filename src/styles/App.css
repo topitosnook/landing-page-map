@@ -310,6 +310,11 @@
   padding: 0 184px 0 184px;
 }
 
+.logo, .logoFooter {
+  width: 177.2px;
+  height: auto;
+}
+
 .impactSection h1 {
   color: #373737;
   font-size: 48px;

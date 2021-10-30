@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import MetaDecorator from '../components/MetaDecorator';
 import Footer from '../components/Footer';
 import IntroSection from '../components/IntroSection';
 import NavBar from '../components/NavBar';
@@ -18,6 +19,7 @@ export default function ProjectView({ dataProjects }) {
   console.log(data);
   return (
     <>
+      <MetaDecorator title='Toroto - proyecto' />
       <NavBar />
       <main className='content-wrap'>
         {data && (
@@ -27,7 +29,7 @@ export default function ProjectView({ dataProjects }) {
               <h1>Problemática</h1>
               <p>{data.problem}</p>
             </section> */}
-            <section className="activitiesSection">
+            <section className='activitiesSection'>
               {data.activities.map((data, index) => {
                 return <Accordion key={index} title={data.name} content={data.description} />;
               })}
