@@ -6,7 +6,7 @@ import SectionProject from '../components/SectionProject';
 import Footer from '../components/Footer';
 
 
-export default function LandingPage({ dataProjects, images }) {
+export default function LandingView({ dataProjects, images }) {
   return (
     <>
       <MetaDecorator title='Toroto - Vuélvete carbono neutral' />

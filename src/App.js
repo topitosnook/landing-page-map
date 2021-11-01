@@ -4,7 +4,7 @@ import './styles/App.css';
 import mapboxgl from 'mapbox-gl';
 import ReactMapGL, { Marker, Popup } from 'react-map-gl';
 import * as parkData from './data/skateboard-parks.json';
-import LandingPage from './views/LandingPage';
+import LandingView from './views/LandingView';
 import ProjectView from './views/ProjectView';
 import imgProject1 from './assets/img/img_project_1.png';
 import imgProject2 from './assets/img/img_project_2.png';
@@ -28,7 +28,7 @@ export default function App() {
         dataProjects &&
         <Switch>
           <Route path='/' exact>
-            <LandingPage dataProjects={dataProjects} images={images}/>
+            <LandingView dataProjects={dataProjects} images={images}/>
           </Route>
           <Route path='/:id'>
             <ProjectView dataProjects={dataProjects} images={images}/>
