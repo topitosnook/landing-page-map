@@ -1,18 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import chevron from '../assets/icons/svg/chevron-down.svg';
 import IntroSection from './IntroSection';
-export default function SectionMap() {
+import Mapbox from './Mapbox';
+
+export default function SectionMap({ dataProjects }) {
   return (
     <section className='containerMap'>
-      <section className='mapOverlay'>
+      <Mapbox dataProjects={dataProjects}/>
+      {/* <section className='mapOverlay'>
         <section className='intro'>
           <IntroSection />
         </section>
         <section className='moreProjects'>
           <p>Ver lista completa de proyectos</p>
-          <img src={chevron} alt="Ver lista de proyectos" />
+          <img src={chevron} alt='Ver lista de proyectos' />
         </section>
-      </section>
+      </section> */}
     </section>
   );
 }

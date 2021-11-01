@@ -1,13 +1,13 @@
 .containerMap {
   height: 748px;
-  background-color: $torotoGrey3;
+  // background-color: $torotoGrey3;
 }
 .mapOverlay {
   display: flex;
   flex-direction: column;
   position: relative;
-      height: 100%;
-    justify-content: space-between;
+  height: 100%;
+  justify-content: space-between;
 }
 
 .intro {

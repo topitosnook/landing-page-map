@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './styles/App.css';
 import mapboxgl from 'mapbox-gl';
 import ReactMapGL, { Marker, Popup } from 'react-map-gl';
-import * as parkData from './data/skateboard-parks.json';
+// import * as parkData from './data/skateboard-parks.json';
 
 
 
@@ -14,13 +14,13 @@ export default function App() {
   //   .then((info) =>  setData(info));
 
   // Configuración del mapa
-  const [viewport, setViewport] = useState({
-    latitud: 45.4211,
-    longitud: -75.6903,
-    width: '100vw',
-    height: '100vh',
-    zoom: 10
-  });
+  // const [viewport, setViewport] = useState({
+  //   latitud: 19.400000,
+  //   longitud: -98.988892,
+  //   width: '100vw',
+  //   height: '100vh',
+  //   zoom: 10
+  // });
   return (
     <div>
       {/* <ReactMapGL {...viewport}
@@ -42,3 +42,40 @@ export default function App() {
     </div>
   );
 }
+
+// import React, { useRef, useEffect, useState } from 'react';
+
+// import mapboxgl from 'mapbox-gl';
+// import ReactMapGL, { Marker, Popup } from 'react-map-gl';
+// // import * as parkData from './data/skateboard-parks.json';
+
+// export default function Mapbox() {
+//   // const [viewport, setViewport] = useState({
+//   //   latitud: 19.4,
+//   //   longitud: -98.988892,
+//   //   width: '100vw',
+//   //   height: '100vh',
+//   //   zoom: 10,
+//   });
+//   return (
+//     <div>
+//       {/* <ReactMapGL
+//         {...viewport}
+//         mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
+//         onViewportChange={(viewport) => {
+//           setViewport(viewport);
+//         }}
+//       >
+//         {dataProjects.data[0].geometry.coordinates.map((project,index) => (
+//           <Marker
+//             key={index}
+//             latitude={project[1]}
+//             longitude={project[0]}
+//           >
+//             <div clas>pr</div>
+//           </Marker>
+//         ))}
+//       </ReactMapGL> */}
+//     </div>
+//   );
+// }

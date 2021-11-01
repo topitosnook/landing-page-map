@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import './styles/App.css';
-import mapboxgl from 'mapbox-gl';
-import ReactMapGL, { Marker, Popup } from 'react-map-gl';
-import * as parkData from './data/skateboard-parks.json';
 import LandingView from './views/LandingView';
 import ProjectView from './views/ProjectView';
 import imgProject1 from './assets/img/img_project_1.png';
 import imgProject2 from './assets/img/img_project_2.png';
 import imgProject3 from './assets/img/img_project_3.png';
 import imgProject4 from './assets/img/img_project_4.png';
+import './styles/App.css';
 
 export default function App() {
   const images = [imgProject1,imgProject2,imgProject3,imgProject4];

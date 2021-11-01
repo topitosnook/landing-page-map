@@ -231,7 +231,6 @@
 
 .containerMap {
   height: 748px;
-  background-color: #bdbdbd;
 }
 
 .mapOverlay {
@@ -638,5 +637,10 @@
   width: auto;
   max-width: 320px;
   border-radius: 10px;
+}
+
+.map-container {
+  margin-top: 56px;
+  height: 748px;
 }
 /*# sourceMappingURL=App.css.map */

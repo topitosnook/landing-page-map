@@ -5,14 +5,15 @@ import SectionMap from '../components/SectionMap';
 import SectionProject from '../components/SectionProject';
 import Footer from '../components/Footer';
 
-
 export default function LandingView({ dataProjects, images }) {
   return (
     <>
       <MetaDecorator title='Toroto - Vuélvete carbono neutral' />
       <NavBar />
+      <header>
+        <SectionMap dataProjects={dataProjects} />
+      </header>
       <main className='content-wrap'>
-        <SectionMap />
         <SectionProject dataProjects={dataProjects} images={images} />
       </main>
       <Footer />
