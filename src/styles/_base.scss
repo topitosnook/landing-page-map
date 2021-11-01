@@ -14,10 +14,11 @@
 .content-wrap {
   flex: 1;
   margin-top: 56px;
-  padding: 0 184px 0 184px;
+  padding: 0 100px;
 }
 
-.logo, .logoFooter{
-  width: 177.2px;
-  height: auto;
+@media screen and (max-width: 780px) {
+.content-wrap{
+  padding: 0;
+}
 }

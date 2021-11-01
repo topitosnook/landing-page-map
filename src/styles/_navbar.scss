@@ -44,13 +44,13 @@
   display: none;
 }
 
+.logo{
+  width: 100px ;
+  height: auto;
+}
+
 @media screen and (max-width: 780px) {
-  // .logo {
-  //   display: flex;
-  //   position: absolute;
-  //   top: 15px;
-  //   left: 35%;
-  // }
+
   .navLinks {
     display: none;
   }

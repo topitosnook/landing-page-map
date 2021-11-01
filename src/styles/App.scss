@@ -1,16 +1,18 @@
-//1. Helpers
+// 1. Helpers
 @import './helpers/variables';
-//2. Base
+// 2. Base
 @import'./base';
-//3. Components
+// 3. Components
 @import './navbar';
 @import './footer';
-@import './mapLanding';
-@import './projectLanding';
-// project view
-@import './projectView';
-@import './introSection';
-@import './impactSection';
-@import './accordion';
 @import './serviceTags';
 @import './add-project';
+// 4. Landing view
+@import './LandingView/mapLanding';
+@import './LandingView/projectLanding';
+// 5. Project view
+@import './ProjectView/projectView';
+@import './ProjectView/introSection';
+@import './ProjectView/impactSection';
+@import './ProjectView/accordion';
+@import './ProjectView/gallery';

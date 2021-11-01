@@ -23,12 +23,13 @@
       -ms-flex: 1;
           flex: 1;
   margin-top: 56px;
-  padding: 0 184px 0 184px;
+  padding: 0 100px;
 }
 
-.logo, .logoFooter {
-  width: 177.2px;
-  height: auto;
+@media screen and (max-width: 780px) {
+  .content-wrap {
+    padding: 0;
+  }
 }
 
 .navbar {
@@ -88,6 +89,11 @@
   display: none;
 }
 
+.logo {
+  width: 100px;
+  height: auto;
+}
+
 @media screen and (max-width: 780px) {
   .navLinks {
     display: none;
@@ -145,6 +151,82 @@
 
 .redesSociales img {
   margin: 10px;
+}
+
+.logoFooter {
+  width: 177.2px;
+  height: auto;
+}
+
+.tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 15px;
+}
+
+.tag__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #373737;
+  border-radius: 18px;
+  padding: 5px;
+  margin: 0.3em;
+}
+
+.tag__name {
+  color: #373737;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.tag__image {
+  width: 24;
+  height: 24;
+}
+
+.add-project {
+  margin: 32px 0;
+  width: 100%;
+}
+
+.add-project__title {
+  font-size: 34px;
+  line-height: 36px;
+  color: #333333;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.add-project__description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.add-project__button {
+  height: 48px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: #373737;
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  margin: 10px 0;
 }
 
 .containerMap {
@@ -262,7 +344,6 @@
 }
 
 .project-card__cover {
-  width: 448px;
   height: 322px;
   padding: 32px 10px;
   display: -webkit-box;
@@ -343,33 +424,6 @@
   color: #333333;
   font-size: 24px;
   line-height: 24px;
-}
-
-.gallery__title {
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: normal;
-  font-style: normal;
-  color: #333333;
-}
-
-.gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 10px;
-  margin: 20px;
-}
-
-.gallery__image img {
-  height: 288px;
-  width: auto;
-  max-width: 350px;
-  border-radius: 10px;
 }
 
 .projectInfo {
@@ -559,74 +613,30 @@
   margin: 32px 0;
 }
 
-.tag {
+.gallery__title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+  font-style: normal;
+  color: #333333;
+}
+
+.gallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin: 15px;
+  gap: 10px;
+  margin: 20px;
 }
 
-.tag__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 1px solid #373737;
-  border-radius: 18px;
-  padding: 5px;
-  margin: 0.3em;
-}
-
-.tag__name {
-  color: #373737;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-.tag__image {
-  width: 24;
-  height: 24;
-}
-
-.add-project {
-  margin: 32px 0;
-  width: 100%;
-}
-
-.add-project__title {
-  font-size: 34px;
-  line-height: 36px;
-  color: #333333;
-  font-style: normal;
-  font-weight: normal;
-}
-
-.add-project__description {
-  font-size: 16px;
-  line-height: 24px;
-  color: #333333;
-  font-style: normal;
-  font-weight: normal;
-}
-
-.add-project__button {
-  height: 48px;
-  width: 100%;
-  font-size: 14px;
-  line-height: 16px;
-  background-color: #373737;
-  font-style: normal;
-  font-weight: 500;
-  border: none;
-  border-radius: 5px;
-  color: #ffffff;
-  margin: 10px 0;
+.gallery__image img {
+  height: 280px;
+  width: auto;
+  max-width: 320px;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=App.css.map */
