@@ -17,12 +17,12 @@ export default function App() {
       .then((response) => response.json())
       .then((data) => setDataProjects(data));
   }, []);
-  console.log(name);
+
 
   return (
     <Router>
       {
-        dataProjects &&
+        dataProjects!==undefined &&
         <Switch>
           <Route path='/' exact>
             <LandingView dataProjects={dataProjects} images={images}/>
@@ -31,7 +31,6 @@ export default function App() {
             <ProjectView dataProjects={dataProjects} images={images}/>
           </Route>
         </Switch>
-
       }
     </Router>
   );

@@ -10,9 +10,7 @@ export default function LandingView({ dataProjects, images }) {
     <>
       <MetaDecorator title='Toroto - Vuélvete carbono neutral' />
       <NavBar />
-      <header>
-        <SectionMap dataProjects={dataProjects} />
-      </header>
+      <header>{images !== undefined && <SectionMap dataProjects={dataProjects} images={images} />}</header>
       <main className='content-wrap'>
         <SectionProject dataProjects={dataProjects} images={images} />
       </main>

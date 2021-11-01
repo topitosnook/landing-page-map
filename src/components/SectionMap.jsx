@@ -3,11 +3,11 @@ import chevron from '../assets/icons/svg/chevron-down.svg';
 import IntroSection from './IntroSection';
 import Mapbox from './Mapbox';
 
-export default function SectionMap({ dataProjects }) {
+export default function SectionMap({ dataProjects, images }) {
   return (
     <section className='containerMap'>
-      <Mapbox dataProjects={dataProjects}/>
-      {/* <section className='mapOverlay'>
+      <Mapbox dataProjects={dataProjects} images={images}/>
+      <section className='mapOverlay'>
         <section className='intro'>
           <IntroSection />
         </section>
@@ -15,7 +15,7 @@ export default function SectionMap({ dataProjects }) {
           <p>Ver lista completa de proyectos</p>
           <img src={chevron} alt='Ver lista de proyectos' />
         </section>
-      </section> */}
+      </section>
     </section>
   );
 }

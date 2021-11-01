@@ -2,3 +2,60 @@
   margin-top: 56px;
   height: 748px;
 }
+
+// .popup-map{
+//   width: 1300px;
+//   // background-color: red;
+// }
+
+.container-link {
+  width: 100%;
+  border: 1px solid $torotoBlack;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 3px 0;
+  text-align: center;
+}
+
+.link-page {
+  text-decoration: none;
+  color: $torotoBlack;
+  font-weight: normal;
+  font-size: 14px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.popup-img {
+  height: auto;
+  width: 220px;
+  border-radius: 10px;
+}
+
+.containerMap {
+  position: relative;
+}
+
+.mapOverlay {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.mapbox-container,
+.mapOverlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mapOverlay {
+  z-index: 10;
+  margin-top: 56px;
+}

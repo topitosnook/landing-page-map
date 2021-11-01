@@ -233,21 +233,6 @@
   height: 748px;
 }
 
-.mapOverlay {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
-  height: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .intro {
   width: 336px;
   display: -webkit-box;
@@ -270,7 +255,6 @@
 .moreProjects {
   height: 50px;
   width: 100%;
-  background-color: #6f6f6f;
   text-align: center;
   position: absolute;
   bottom: 0;
@@ -642,5 +626,65 @@
 .map-container {
   margin-top: 56px;
   height: 748px;
+}
+
+.container-link {
+  width: 100%;
+  border: 1px solid #373737;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 3px 0;
+  text-align: center;
+}
+
+.link-page {
+  text-decoration: none;
+  color: #373737;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.link-page:focus {
+  outline: none;
+}
+
+.popup-img {
+  height: auto;
+  width: 220px;
+  border-radius: 10px;
+}
+
+.containerMap {
+  position: relative;
+}
+
+.mapOverlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: transparent;
+}
+
+.mapbox-container,
+.mapOverlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mapOverlay {
+  z-index: 10;
+  margin-top: 56px;
 }
 /*# sourceMappingURL=App.css.map */

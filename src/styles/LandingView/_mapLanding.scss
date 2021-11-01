@@ -2,13 +2,6 @@
   height: 748px;
   // background-color: $torotoGrey3;
 }
-.mapOverlay {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  height: 100%;
-  justify-content: space-between;
-}
 
 .intro {
   // height: 300px;
@@ -24,7 +17,7 @@
 .moreProjects {
   height: 50px;
   width: 100%;
-  background-color: $torotoGrey2;
+  // background-color: $torotoGrey2;
   text-align: center;
   position: absolute;
   bottom: 0;

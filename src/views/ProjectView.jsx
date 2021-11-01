@@ -34,7 +34,12 @@ export default function ProjectView({ dataProjects, images }) {
               <p className='problem__description'>{data.problem}</p>
             </section>
             <section className='activities'>
-              <h1 className='activities__title'>Implementación</h1>
+              <h1 className='activities__title'>
+                Implementación{' '}
+                <btn className='gallery__modal'>
+                  <img src={Tooltip} alt='' />
+                </btn>
+              </h1>
               <div className='activities__accordeon'>
                 <p className='activities__description'>Actividades de restauración</p>
                 {data.activities.map((data, index) => {
@@ -47,12 +52,7 @@ export default function ProjectView({ dataProjects, images }) {
               <div className='map__image'></div>
             </section>
             <section className='gallery-section'>
-              <h2 className='gallery__title'>
-                Galeria de imágenes
-                <btn className='gallery__modal'>
-                  <img src={Tooltip} alt='' />
-                </btn>
-              </h2>
+              <h2 className='gallery__title'>Galeria de imágenes</h2>
               <div className='gallery'>
                 {data.images.map((image, index) => {
                   return (
