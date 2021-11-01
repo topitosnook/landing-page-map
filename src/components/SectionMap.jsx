@@ -9,7 +9,7 @@ export default function SectionMap() {
           <IntroSection />
         </section>
         <section className='moreProjects'>
-          <p>Ver Lista completa de proyectos</p>
+          <p>Ver lista completa de proyectos</p>
           <img src={chevron} alt="Ver lista de proyectos" />
         </section>
       </section>

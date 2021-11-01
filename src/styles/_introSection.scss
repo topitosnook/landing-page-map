@@ -1,0 +1,35 @@
+.intro-section {
+  display: flex;
+  margin: 20px 0;
+}
+
+.intro__location {
+  color: $torotoGrey1;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.intro__name {
+  color: $torotoGrey1;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.intro__description {
+  color: $torotoGrey2;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.intro__image {
+  border-radius: 20px;
+  height: auto;
+  width: 45%;
+  margin: 10px;
+}

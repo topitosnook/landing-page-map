@@ -7,6 +7,30 @@
   font-family: 'Roboto', sans-serif;
 }
 
+#root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-top: 56px;
+  padding: 0 184px 0 184px;
+}
+
+.logo, .logoFooter {
+  width: 177.2px;
+  height: auto;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,10 +84,6 @@
   color: #373737;
 }
 
-.logo {
-  font-size: 30px;
-}
-
 .mobile-menu-icon {
   display: none;
 }
@@ -107,9 +127,29 @@
   }
 }
 
+.mainFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 112px;
+  background-color: #1a30db;
+  color: #ffffff;
+  position: relative;
+  bottom: 0;
+}
+
+.redesSociales img {
+  margin: 10px;
+}
+
 .containerMap {
   height: 748px;
-  background-color: #BDBDBD;
+  background-color: #bdbdbd;
 }
 
 .mapOverlay {
@@ -149,7 +189,7 @@
 .moreProjects {
   height: 50px;
   width: 100%;
-  background-color: #6F6F6F;
+  background-color: #6f6f6f;
   text-align: center;
   position: absolute;
   bottom: 0;
@@ -158,8 +198,8 @@
           flex: none;
 }
 
-.projectSection {
-  width: 90%;
+.project-section {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,13 +207,18 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 8%;
 }
 
-.projectCards {
+.project-section__title {
+  color: #373737;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 56px;
+  margin: 32px 0;
+}
+
+.project-section__cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,24 +234,37 @@
   gap: 10px;
 }
 
-.projectCard {
-  width: 512px;
-  height: 544px;
+.project-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 452px;
+  height: auto;
+  min-height: 650px;
   border-radius: 20px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.projectCover img {
-  width: 512px;
+.project-card__img {
+  width: auto;
+  height: 172px;
+}
+
+.project-card__img img {
+  width: 100%;
   height: 172px;
   border-radius: 20px 20px 0 0;
 }
 
-.projectInfoCover {
+.project-card__cover {
   width: 448px;
   height: 322px;
-  margin: 24px 32px 0 32px;
+  padding: 32px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,6 +275,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .buttonMore {
@@ -231,32 +292,7 @@
   cursor: pointer;
 }
 
-.serviceTags {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin-top: 5px;
-}
-
-.tagItem {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 1px solid #373737;
-  border-radius: 18px;
-  padding: 5px;
-  margin: 0 3px 0 3px;
-}
-
-.info {
+.project-card__info {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -271,79 +307,53 @@
   line-height: 1.6;
 }
 
-.mainFooter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 112px;
-  background-color: #1a30db;
-  color: #ffffff;
-  position: relative;
-  bottom: 0;
-}
-
-.redesSociales img {
-  margin: 10px;
-}
-
-#root {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  min-height: 100vh;
-}
-
-.content-wrap {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin-top: 56px;
-  padding: 0 184px 0 184px;
-}
-
-.logo, .logoFooter {
-  width: 177.2px;
-  height: auto;
-}
-
-.impactSection h1 {
-  color: #373737;
-  font-size: 48px;
-}
-
-.impactCards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.impactCard {
-  text-align: center;
-}
-
-.nameImpact {
-  font-size: 72px;
-  color: #1a30db;
-}
-
-.valueImpact {
-  font-size: 20px;
+.problem__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
   color: #333333;
-  font-weight: bold;
 }
 
-.imageGallery {
+.problem__description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  margin: 22px 0;
+}
+
+.activities__title {
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 5px;
+  font-size: 48px;
+  line-height: 56px;
+  color: #373737;
+}
+
+.activities__description {
+  color: #333333;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.map__title {
+  font-style: normal;
+  font-weight: normal;
+  color: #333333;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.gallery__title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+  font-style: normal;
+  color: #333333;
+}
+
+.gallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -355,19 +365,111 @@
   margin: 20px;
 }
 
-.gallerySection {
-  text-align: center;
-}
-
-.imageProject img {
+.gallery__image img {
   height: 288px;
   width: auto;
+  max-width: 350px;
   border-radius: 10px;
 }
 
-.imagefirstset {
-  width: 512px;
-  height: 480px;
+.projectInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+}
+
+.intro-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+}
+
+.intro__location {
+  color: #333333;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.intro__name {
+  color: #333333;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.intro__description {
+  color: #6f6f6f;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.intro__image {
+  border-radius: 20px;
+  height: auto;
+  width: 45%;
+  margin: 10px;
+}
+
+.impact-section__title {
+  color: #373737;
+  font-size: 48px;
+}
+
+.impact__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.impact__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.impact__card {
+  text-align: center;
+  height: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.impact__card__background {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: inline;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.impact__card__name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 72px;
+  color: #1a30db;
+  margin: 27px 0;
+}
+
+.impact__card__value {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+  font-weight: bold;
+  font-style: normal;
 }
 
 .accordionSection {
@@ -401,10 +503,12 @@
   transition: background-color 0.6s ease;
 }
 
-.accordion:hover,
 .accordionTitle {
-  font-weight: 600;
-  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
 }
 
 .accordionIcon {
@@ -421,6 +525,11 @@
 }
 
 .accordionContent {
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: normal;
+  color: #333333;
   background-color: #ffffff;
   overflow: hidden;
   -webkit-transition: max-height 0.6s ease;
@@ -436,5 +545,88 @@
 .chevronAccordion {
   width: 15px;
   height: auto;
+}
+
+.activities__accordeon {
+  margin: 32px 0;
+}
+
+.map__image {
+  height: 600px;
+  width: 100%;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  margin: 32px 0;
+}
+
+.tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 15px;
+}
+
+.tag__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #373737;
+  border-radius: 18px;
+  padding: 5px;
+  margin: 0.3em;
+}
+
+.tag__name {
+  color: #373737;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.tag__image {
+  width: 24;
+  height: 24;
+}
+
+.add-project {
+  margin: 32px 0;
+  width: 100%;
+}
+
+.add-project__title {
+  font-size: 34px;
+  line-height: 36px;
+  color: #333333;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.add-project__description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.add-project__button {
+  height: 48px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: #373737;
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  margin: 10px 0;
 }
 /*# sourceMappingURL=App.css.map */

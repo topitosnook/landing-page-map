@@ -5,16 +5,16 @@ import ItemTag from './ItemTag';
 
 export default function ItemProject({ project, image }) {
   return (
-    <section className='projectCard'>
-      <div className='projectCover'>
+    <section className='project-card'>
+      <div className='project-card__img'>
         <img src={image} alt='Lugar del proyecto' />
       </div>
-      <div className='projectInfoCover'>
-        <div className='info'>
-          <p>{project.location}</p>
-          <h2>{project.name}</h2>
-          <p>{project.description}</p>
-          <div className='serviceTags'>
+      <div className='project-card__cover'>
+        <div className='project-card__info'>
+          <p className='project-card__location'>{project.location}</p>
+          <h2 className='project-card__name'>{project.name}</h2>
+          <p className='project-card__description'>{project.description}</p>
+          <div className='tag'>
             <ItemTag name={'Servicio'} />
             <ItemTag name={'Servicio'} />
           </div>

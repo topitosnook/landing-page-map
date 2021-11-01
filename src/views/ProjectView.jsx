@@ -3,9 +3,10 @@ import MetaDecorator from '../components/MetaDecorator';
 import Footer from '../components/Footer';
 import IntroSection from '../components/IntroSection';
 import NavBar from '../components/NavBar';
-import FirstSectionProject from '../components/FirstSectionProject';
+import ProjectIntro from '../components/ProjectIntro';
 import BoxImpact from '../components/BoxImpact';
 import Accordion from '../components/Accordion';
+import Tooltip from '../assets/icons/svg/tooltip_icon.svg';
 
 export default function ProjectView({ dataProjects, images }) {
   const projectPath = window.location.pathname.substring(1);
@@ -20,50 +21,57 @@ export default function ProjectView({ dataProjects, images }) {
       }
     });
   }, []);
-  // console.log(data);
-  console.log(index);
   return (
     <>
       <MetaDecorator title='Toroto - proyecto' />
       <NavBar />
       <main className='content-wrap'>
-        {data && (
+        {data !== undefined && (
           <>
-            {index!==undefined && <FirstSectionProject data={data} image={images[index]} />}
-            <section>
-              <h1>Problemática</h1>
-              <p>{data.problem}</p>
+            {index !== undefined && <ProjectIntro data={data} image={images[index]} />}
+            <section className='problem'>
+              <h1 className='problem__title'>Problemática</h1>
+              <p className='problem__description'>{data.problem}</p>
             </section>
-            <section className='activitiesSection'>
-              {data.activities.map((data, index) => {
-                return <Accordion key={index} title={data.name} content={data.description} />;
-              })}
+            <section className='activities'>
+              <h1 className='activities__title'>Implementación</h1>
+              <div className='activities__accordeon'>
+                <p className='activities__description'>Actividades de restauración</p>
+                {data.activities.map((data, index) => {
+                  return <Accordion key={index} title={data.name} content={data.description} />;
+                })}
+              </div>
             </section>
-            {/* <section>
-              <h2>Mapa de obras</h2>
-              <div>Aqui iría la imagen del mapa</div>
-            </section> */}
-            {/* <section className='gallerySection'>
-              <h2>Galeria de imagenes</h2>
-              <div className='imageGallery'>
+            <section className='map'>
+              <h2 className='map__title'>Mapa de obras</h2>
+              <div className='map__image'></div>
+            </section>
+            <section className='gallery-section'>
+              <h2 className='gallery__title'>
+                Galeria de imágenes
+                <btn className='gallery__modal'>
+                  <img src={Tooltip} alt='' />
+                </btn>
+              </h2>
+              <div className='gallery'>
                 {data.images.map((image, index) => {
                   return (
-                    <div key={index} className='imageProject'>
+                    <div key={index} className='gallery__image'>
                       <img src={image} alt='' />
                     </div>
                   );
                 })}
               </div>
-            </section> */}
-            {/* <section className='impactSection'>
-              <h1>Impacto</h1>
-              <div className='impactCards'>
+            </section>
+            <section className='impact-section'>
+              <h1 className='impact__title'>Impacto</h1>
+              <div className='impact__cards'>
                 {data.impact.map((impact, index) => {
                   return <BoxImpact key={index} impact={impact} />;
                 })}
               </div>
-            </section> */}
-            {/* <IntroSection /> */}
+            </section>
+            <IntroSection />
           </>
         )}
       </main>

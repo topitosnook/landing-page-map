@@ -1,0 +1,25 @@
+.tag {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin:15px;
+}
+
+.tag__item {
+  display: flex;
+  align-items: center;
+  border: 1px solid $torotoBlack;
+  border-radius: 18px;
+  padding: 5px;
+  margin: 0.3em;
+}
+
+.tag__name{
+  color:$torotoBlack;
+  font-size: 14px;
+  line-height: 24px;
+}
+.tag__image{
+  width:24;
+  height: 24; 
+}

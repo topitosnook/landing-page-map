@@ -1,16 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ItemProject from './ItemProject';
 
-
-export default function SectionProject({ dataProjects, images}) {
+export default function SectionProject({ dataProjects, images }) {
   return (
-    <section className='projectSection'>
-      <h1>Todos nuestros proyectos</h1>
-      <div className='projectCards'>
+    <section className='project-section'>
+      <h1 className='project-section__title'>Todos nuestros proyectos</h1>
+      <div className='project-section__cards'>
         {dataProjects.data.map((project, index) => (
-          <div key={project.id}>
-            <ItemProject project={project} image={images[index]} />
-          </div>
+          <ItemProject key={project.id} project={project} image={images[index]} />
         ))}
       </div>
     </section>

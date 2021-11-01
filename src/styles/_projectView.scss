@@ -1,46 +1,67 @@
-.impactSection {
-  h1 {
-    color: $torotoBlack;
-    font-size: 48px;
-  }
-}
-.impactCards {
-  display: flex;
-  justify-content: space-around;
-}
-.impactCard {
-  text-align: center;
-}
-// para cajas de impacto
-.nameImpact {
-  font-size: 72px;
-  color: $torotoBlue;
-}
-.valueImpact {
-  font-size: 20px;
+.problem__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
   color: $torotoGrey1;
-  font-weight: bold;
-  // line-height: 72px;
 }
-.imageGallery{
+
+.problem__description {
+  font-size: 16px;
+  line-height: 24px;
+  color: $torotoGrey1;
+  margin: 22px 0;
+}
+
+.activities__title {
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 5px;
+  font-size: 48px;
+  line-height: 56px;
+  color: $torotoBlack;
+}
+
+.activities__description {
+  color: $torotoGrey1;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.map__title {
+  font-style: normal;
+  font-weight: normal;
+  color: $torotoGrey1;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.gallery__title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+  font-style: normal;
+  color: $torotoGrey1;
+}
+
+.gallery {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 10px;
   margin: 20px;
 }
-.gallerySection{
-  text-align: center;
-}
-.imageProject {
+
+.gallery__image {
   img {
     height: 288px;
     width: auto;
+    max-width: 350px;
     border-radius: 10px;
   }
 }
 
-.imagefirstset{
-  width:512px;
-  height: 480px;
+.projectInfo {
+  display: flex;
+  margin: 20px 0;
 }
