@@ -200,33 +200,33 @@
 }
 
 .add-project__title {
+  font-style: normal;
+  font-weight: normal;
   font-size: 34px;
   line-height: 36px;
   color: #333333;
-  font-style: normal;
-  font-weight: normal;
 }
 
 .add-project__description {
+  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   color: #333333;
-  font-style: normal;
-  font-weight: normal;
 }
 
 .add-project__button {
   height: 48px;
   width: 100%;
-  font-size: 14px;
-  line-height: 16px;
   background-color: #373737;
-  font-style: normal;
-  font-weight: 500;
+  margin: 10px 0;
   border: none;
   border-radius: 5px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
   color: #ffffff;
-  margin: 10px 0;
 }
 
 .dark {
@@ -296,11 +296,11 @@
 }
 
 .project-section__title {
-  color: #373737;
   font-style: normal;
   font-weight: normal;
   font-size: 48px;
   line-height: 56px;
+  color: #373737;
   margin: 32px 0;
 }
 
@@ -408,9 +408,9 @@
 }
 
 .activities__title {
+  margin-top: 5px;
   font-style: normal;
   font-weight: normal;
-  margin-top: 5px;
   font-size: 48px;
   line-height: 56px;
   color: #373737;
@@ -425,9 +425,9 @@
 .map__title {
   font-style: normal;
   font-weight: normal;
-  color: #333333;
   font-size: 24px;
   line-height: 24px;
+  color: #333333;
 }
 
 .projectInfo {
@@ -445,27 +445,27 @@
 }
 
 .intro__location {
-  color: #333333;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
+  color: #333333;
 }
 
 .intro__name {
-  color: #333333;
   font-style: normal;
   font-weight: normal;
   font-size: 48px;
   line-height: 56px;
+  color: #333333;
 }
 
 .intro__description {
-  color: #6f6f6f;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
+  color: #6f6f6f;
 }
 
 .intro__image {
@@ -526,8 +526,6 @@
   font-size: 20px;
   line-height: 24px;
   color: #333333;
-  font-weight: bold;
-  font-style: normal;
 }
 
 .accordionSection {
@@ -583,10 +581,10 @@
 }
 
 .accordionContent {
-  font-size: 16px;
-  line-height: 24px;
   font-style: normal;
   font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
   color: #333333;
   background-color: #ffffff;
   overflow: hidden;
@@ -685,24 +683,24 @@
 }
 
 .modal__title {
-  font-weight: 400;
   font-style: normal;
+  font-weight: 400;
   font-size: 34px;
   line-height: 36px;
   color: #373737;
 }
 
 .modal__description {
-  font-weight: normal;
   font-style: normal;
+  font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   color: #333333;
 }
 
 .list__title {
-  font-weight: 500;
   font-style: normal;
+  font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   color: #333333;
@@ -713,8 +711,8 @@
 }
 
 .modal__list li {
-  font-weight: normal;
   font-style: normal;
+  font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   color: #333333;
@@ -747,14 +745,14 @@
 
 .modal__closebtn {
   background-color: transparent;
-  color: #ffffff;
   border: none;
   z-index: 1;
   padding: 5px;
-  font-weight: normal;
   font-style: normal;
+  font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+  color: #ffffff;
 }
 
 .modal__buttons {

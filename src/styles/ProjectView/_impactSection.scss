@@ -30,21 +30,21 @@
   }
  
   &__name {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 72px;
-    line-height: 72px;
-    color: $torotoBlue;
+    @include fontStyling(normal,500,72px,72px,$torotoBlue);
+    // font-style: normal;
+    // font-weight: 500;
+    // font-size: 72px;
+    // line-height: 72px;
+    // color: $torotoBlue;
     margin: 27px 0;
     
   }
   &__value {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 24px;
-    color: $torotoGrey1;
-    font-weight: bold;
-    font-style: normal;
+    @include fontStyling(normal,bold,20px,24px,$torotoGrey1);
+    // font-style: normal;
+    // font-weight: bold;
+    // font-size: 20px;
+    // line-height: 24px;
+    // color: $torotoGrey1;
   }
 }

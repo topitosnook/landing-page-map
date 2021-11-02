@@ -1,9 +1,10 @@
 .problem__title {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
-  color: $torotoGrey1;
+  @include fontStyling(normal,normal,24px,24px,$torotoGrey1);
+  // font-style: normal;
+  // font-weight: normal;
+  // font-size: 24px;
+  // line-height: 24px;
+  // color: $torotoGrey1;
 }
 
 .problem__description {
@@ -14,12 +15,13 @@
 }
 
 .activities__title {
-  font-style: normal;
-  font-weight: normal;
   margin-top: 5px;
-  font-size: 48px;
-  line-height: 56px;
-  color: $torotoBlack;
+  @include fontStyling(normal,normal,48px,56px,$torotoBlack);
+  // font-style: normal;
+  // font-weight: normal;
+  // font-size: 48px;
+  // line-height: 56px;
+  // color: $torotoBlack;
 }
 
 .activities__description {
@@ -29,14 +31,13 @@
 }
 
 .map__title {
-  font-style: normal;
-  font-weight: normal;
-  color: $torotoGrey1;
-  font-size: 24px;
-  line-height: 24px;
+  @include fontStyling(normal,normal,24px,24px,$torotoGrey1);
+  // font-style: normal;
+  // font-weight: normal;
+  // color: $torotoGrey1;
+  // font-size: 24px;
+  // line-height: 24px;
 }
-
-
 
 .projectInfo {
   display: flex;

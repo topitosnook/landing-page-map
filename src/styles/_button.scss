@@ -1,15 +1,16 @@
 .add-project__button {
   height: 48px;
   width: 100%;
-  font-size: 14px;
-  line-height: 16px;
   background-color: $torotoBlack;
-  font-style: normal;
-  font-weight: 500;
+  margin: 10px 0;
   border: none;
   border-radius: 5px;
-  color: $torotoWhite;
-  margin: 10px 0;
+  @include fontStyling(normal,500,14px,16px,$torotoWhite);
+  // font-size: 14px;
+  // line-height: 16px;
+  // font-style: normal;
+  // font-weight: 500;
+  // color: $torotoWhite;
 }
 
 .dark {
