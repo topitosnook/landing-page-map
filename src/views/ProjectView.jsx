@@ -11,7 +11,8 @@ import { ModalInfo, ModalGallery } from '../components/ModalInfo';
 import mapaObras from '../assets/img/map.png';
 
 export default function ProjectView({ dataProjects, images }) {
-  const projectPath = window.location.pathname.substring(1);
+  let projectPath = window.location.pathname.substring(1);
+  projectPath = projectPath.substr(projectPath.length - 4);
   const [data, setData] = useState();
   const [index, setIndex] = useState();
   const [openModal, setOpenModal] = useState(false);
@@ -64,8 +65,8 @@ export default function ProjectView({ dataProjects, images }) {
                 {data.images.map((image, index) => {
                   return (
                     <div key={index} className='gallery__image'>
-                      <img className="gallery__photo" src={image} alt='' onClick={() => setOpenModal(true)} />
-                      {openModal && <ModalGallery closeModal={setOpenModal} image ={image} data={data} />}
+                      <img className='gallery__photo' src={image} alt='' onClick={() => setOpenModal(true)} />
+                      {openModal && <ModalGallery closeModal={setOpenModal} image={image} data={data} />}
                     </div>
                   );
                 })}

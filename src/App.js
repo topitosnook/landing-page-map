@@ -24,10 +24,10 @@ export default function App() {
       {
         dataProjects!==undefined &&
         <Switch>
-          <Route path='/' exact>
+          <Route path='/landing-page-map/' exact>
             <LandingView dataProjects={dataProjects} images={images}/>
           </Route>
-          <Route path='/:id'>
+          <Route path='/landing-page-map/:id'>
             <ProjectView dataProjects={dataProjects} images={images}/>
           </Route>
         </Switch>

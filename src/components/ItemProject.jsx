@@ -19,7 +19,7 @@ export default function ItemProject({ project, image }) {
             <ItemTag name={'Servicio'} />
           </div>
         </div>
-        <Link to={'/' + project.id}>
+        <Link to={'/landing-page-map/' + project.id}>
           <ButtonProject name={'VER PROYECTO COMPLETO'} classType={'light'} />
         </Link>
       </div>

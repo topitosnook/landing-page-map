@@ -16,7 +16,7 @@ export default function Footer() {
         <img src={twitter} alt='Twitter redirect' />
       </section>
       <section>
-        <Link to='/'>
+        <Link to='/landing-page-map/'>
           <img className='logoFooter' src={logo} alt='Toroto' />
         </Link>
       </section>

@@ -12,19 +12,19 @@ export default function NavBar() {
         </Link>
       </div>
       <ul className={isMobile ? 'navLinksMobile' : 'navLinks'} onClick={() => setIsMobile(true)}>
-        <Link to='/' className='proyectos'>
+        <Link to='/landing-page-map/' className='proyectos'>
           <li>PROYECTOS</li>
         </Link>
-        <Link to='/' className='sobreToroto'>
+        <Link to='/landing-page-map/' className='sobreToroto'>
           <li>SOBRE TOROTO</li>
         </Link>
-        <Link to='/' className='blog'>
+        <Link to='/landing-page-map/' className='blog'>
           <li>BLOG</li>
         </Link>
-        <Link to='/' className='metaRegistro'>
+        <Link to='/landing-page-map/' className='metaRegistro'>
           <li>META REGISTRO</li>
         </Link>
-        <Link to='/' className='contacto'>
+        <Link to='/landing-page-map/' className='contacto'>
           <li>CONTACTO</li>
         </Link>
       </ul>
