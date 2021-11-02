@@ -17,10 +17,12 @@
 .moreProjects {
   height: 50px;
   width: 100%;
-  // background-color: $torotoGrey2;
   text-align: center;
   position: absolute;
   bottom: 0;
   flex: none;
   // align-self: flex-end;
+}
+.mapOverlay,.moreProjects,.intro{
+  pointer-events: none;
 }

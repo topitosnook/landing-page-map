@@ -263,6 +263,10 @@
           flex: none;
 }
 
+.mapOverlay, .moreProjects, .intro {
+  pointer-events: none;
+}
+
 .project-section {
   width: 100%;
   display: -webkit-box;
