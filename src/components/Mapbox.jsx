@@ -7,9 +7,8 @@ export default function Mapbox({ dataProjects, images }) {
   const mapContainer = useRef(null);
   const map = useRef(null);
   const [lng, setLng] = useState(-108.8548);
-  const [lat, setLat] = useState(26.9856);
+  const [lat, setLat] = useState(15.9856);
   const [zoom, setZoom] = useState(4);
-  console.log(images);
   useEffect(() => {
     const map = new mapboxgl.Map({
       container: mapContainer.current,
@@ -19,7 +18,7 @@ export default function Mapbox({ dataProjects, images }) {
       interactive: false,
     });
 
-    if (map.current) return; // initialize map only once
+    if (map.current) return; 
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
       style: 'mapbox://styles/mapbox/streets-v11',
