@@ -9,16 +9,6 @@
   margin: 22px 0;
 }
 
-.activities__title {
-  margin-top: 5px;
-  @include fontStyling(normal, normal, 48px, 56px, $torotoBlack);
-}
-
-.activities__description {
-  color: $torotoGrey1;
-  font-size: 24px;
-  line-height: 24px;
-}
 
 .map__title {
   @include fontStyling(normal, normal, 24px, 24px, $torotoGrey1);
@@ -29,8 +19,4 @@
   margin: 20px 0;
 }
 
-@media screen and (max-width: 780px) {
-  .activities__title {
-    @include fontStyling(normal, normal, 42px, 46px, $torotoBlack);
-  }
-}
+

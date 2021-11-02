@@ -5,29 +5,14 @@
 
 .intro__location {
   @include fontStyling(normal, normal, 24px, 24px, $torotoGrey1);
-  // color: $torotoGrey1;
-  // font-style: normal;
-  // font-weight: normal;
-  // font-size: 24px;
-  // line-height: 24px;
 }
 
 .intro__name {
   @include fontStyling(normal, normal, 48px, 56px, $torotoGrey1);
-  // color: $torotoGrey1;
-  // font-style: normal;
-  // font-weight: normal;
-  // font-size: 48px;
-  // line-height: 56px;
 }
 
 .intro__description {
   @include fontStyling(normal, 500, 20px, 24px, $torotoGrey2);
-  // color: $torotoGrey2;
-  // font-style: normal;
-  // font-weight: 500;
-  // font-size: 20px;
-  // line-height: 24px;
 }
 
 .intro__image {
@@ -39,8 +24,14 @@
 @media screen and (max-width: 780px) {
   .intro-section {
     flex-direction: column-reverse;
-    div {
+    margin: 0;
+    .intro-section__info {
       margin-top: 10px;
+      border-radius: 20px 20px 0 0;
+      padding: 5px;
+      margin: -25px 0;
+      background-color: $torotoWhite;
+      z-index: 10;
     }
   }
   .intro__image {
@@ -49,6 +40,26 @@
     margin: 0;
     border-radius: 0;
   }
+  .intro__location {
+    @include fontStyling(normal, normal, 14px, 16px, $torotoGrey1);
+  }
 
- 
+  .intro__name {
+    @include fontStyling(normal, normal, 24px, 28px, $torotoGrey1);
+  }
+
+  .intro__description {
+    @include fontStyling(normal, 500, 12px, 14px, $torotoGrey2);
+  }
+  .problem {
+    margin-top: 40px;
+    &__title {
+      @include fontStyling(normal, normal, 14px, 16px, $torotoGrey1);
+    }
+    &__description{
+      @include fontStyling(normal, normal, 14px, 16px, $torotoGrey1);
+
+    }
+  }
+  
 }

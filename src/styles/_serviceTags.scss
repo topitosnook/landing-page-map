@@ -15,11 +15,16 @@
 }
 
 .tag__name{
-  color:$torotoBlack;
-  font-size: 14px;
-  line-height: 24px;
+  @include fontStyling(normal, 500, 14px, 24px, $torotoBlack);
 }
+
 .tag__image{
   width:24;
   height: 24; 
+}
+
+@media screen and (max-width: 780px) {
+  .tag__name{
+    @include fontStyling(normal, 500, 12px, 14px, $torotoBlack);
+  }
 }
