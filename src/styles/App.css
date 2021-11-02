@@ -925,11 +925,84 @@
   margin: 20px;
 }
 
-.gallery__image img {
+.gallery__photo {
   height: 280px;
   width: auto;
   max-width: 320px;
   border-radius: 10px;
+}
+
+.modalContainerGallery {
+  width: 780px;
+  height: 550px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.gallery-close-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0 20px;
+}
+
+.gallery-close {
+  border: none;
+  background-color: transparent;
+}
+
+.modal__gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px;
+}
+
+.modal__img-description {
+  margin-top: 15px;
+}
+
+.modal__img-gallery {
+  height: 450px;
+  width: auto;
+}
+
+@media screen and (max-width: 780px) {
+  .gallery__photo {
+    height: 70px;
+    width: auto;
+    max-width: 100px;
+    border-radius: 10px;
+  }
+  .modal__img-gallery {
+    margin-top: 100px;
+    height: auto;
+    width: 250px;
+  }
+  .modalContainerGallery {
+    width: 350px;
+    height: 600px;
+    margin-top: 20px;
+  }
 }
 
 .modalBackground {

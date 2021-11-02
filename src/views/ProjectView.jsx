@@ -7,14 +7,14 @@ import ProjectIntro from '../components/ProjectIntro';
 import BoxImpact from '../components/BoxImpact';
 import Accordion from '../components/Accordion';
 import Tooltip from '../assets/icons/svg/tooltip_icon.svg';
-import ModalInfo from '../components/ModalInfo';
-import mapaObras from'../assets/img/map.png';
+import { ModalInfo, ModalGallery } from '../components/ModalInfo';
+import mapaObras from '../assets/img/map.png';
 
 export default function ProjectView({ dataProjects, images }) {
   const projectPath = window.location.pathname.substring(1);
   const [data, setData] = useState();
   const [index, setIndex] = useState();
-  const [openModal,setOpenModal] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
 
   useEffect(() => {
     dataProjects.data.forEach((project, i) => {
@@ -27,7 +27,7 @@ export default function ProjectView({ dataProjects, images }) {
   console.log(data);
   return (
     <>
-      {data!== undefined && <MetaDecorator title={`Toroto - ${data.location}`} />}
+      {data !== undefined && <MetaDecorator title={`Toroto - ${data.location}`} />}
       <NavBar />
       <main className='content-wrap'>
         {data !== undefined && (
@@ -40,10 +40,10 @@ export default function ProjectView({ dataProjects, images }) {
             <section className='activities'>
               <h1 className='activities__title'>
                 Implementación{' '}
-                <btn onClick={()=>setOpenModal(true)} className='activities__modal'>
+                <btn onClick={() => setOpenModal(true)} className='activities__modal'>
                   <img src={Tooltip} alt='' />
                 </btn>
-                {openModal&&<ModalInfo closeModal={setOpenModal}/>}
+                {openModal && <ModalInfo closeModal={setOpenModal} />}
               </h1>
               <div className='activities__accordeon'>
                 <p className='activities__description'>Actividades de restauración</p>
@@ -55,7 +55,7 @@ export default function ProjectView({ dataProjects, images }) {
             <section className='map'>
               <h2 className='map__title'>Mapa de obras</h2>
               <div className='map__image'>
-                <img src={mapaObras} alt="mapa de obras" />
+                <img src={mapaObras} alt='mapa de obras' />
               </div>
             </section>
             <section className='gallery-section'>
@@ -64,7 +64,8 @@ export default function ProjectView({ dataProjects, images }) {
                 {data.images.map((image, index) => {
                   return (
                     <div key={index} className='gallery__image'>
-                      <img src={image} alt='' />
+                      <img className="gallery__photo" src={image} alt='' onClick={() => setOpenModal(true)} />
+                      {openModal && <ModalGallery closeModal={setOpenModal} image ={image} data={data} />}
                     </div>
                   );
                 })}

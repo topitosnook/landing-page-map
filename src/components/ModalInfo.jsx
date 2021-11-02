@@ -1,7 +1,7 @@
 import React from 'react';
 import banner from '../assets/img/img_modal_actvidad.png';
 import ButtonProject from './ButtonProject';
-export default function ModalInfo({ closeModal }) {
+function ModalInfo({ closeModal }) {
   return (
     <div className='modalBackground'>
       <div className='modalContainer'>
@@ -33,11 +33,33 @@ export default function ModalInfo({ closeModal }) {
             </ul>
           </div>
           <div className='modal__buttons'>
-            <ButtonProject name="PROPONER UN PROYECTO" classType={'dark'}/>
-            <ButtonProject name="VER LOS PROYECTOS" classType={'nude'}/>
+            <ButtonProject name='PROPONER UN PROYECTO' classType={'dark'} />
+            <ButtonProject name='VER LOS PROYECTOS' classType={'nude'} />
           </div>
         </div>
       </div>
     </div>
   );
 }
+
+function ModalGallery({ closeModal, image }) {
+  return (
+    <div className='modalBackground'>
+      <div className='modalContainerGallery'>
+        <div className="gallery-close-banner">
+          <button className='gallery-close' onClick={() => closeModal(false)}>
+            X
+          </button>
+        </div>
+        <div>
+          <div className='modal__gallery'>
+            <img className='modal__img-gallery' src={image} alt='Gente trabajando en un espacio abierto' />
+            <p className='modal__img-description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export { ModalInfo, ModalGallery };
