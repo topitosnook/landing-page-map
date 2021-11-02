@@ -7,11 +7,15 @@ import ProjectIntro from '../components/ProjectIntro';
 import BoxImpact from '../components/BoxImpact';
 import Accordion from '../components/Accordion';
 import Tooltip from '../assets/icons/svg/tooltip_icon.svg';
+import ModalInfo from '../components/ModalInfo';
 
 export default function ProjectView({ dataProjects, images }) {
   const projectPath = window.location.pathname.substring(1);
   const [data, setData] = useState();
   const [index, setIndex] = useState();
+
+  // for modal
+  const [openModal,setOpenModal] = useState(false);
 
   useEffect(() => {
     dataProjects.data.forEach((project, i) => {
@@ -36,9 +40,10 @@ export default function ProjectView({ dataProjects, images }) {
             <section className='activities'>
               <h1 className='activities__title'>
                 Implementación{' '}
-                <btn className='gallery__modal'>
+                <btn onClick={()=>setOpenModal(true)} className='activities__modal'>
                   <img src={Tooltip} alt='' />
                 </btn>
+                {openModal&&<ModalInfo closeModal={setOpenModal}/>}
               </h1>
               <div className='activities__accordeon'>
                 <p className='activities__description'>Actividades de restauración</p>
