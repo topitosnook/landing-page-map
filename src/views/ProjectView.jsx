@@ -23,6 +23,7 @@ export default function ProjectView({ dataProjects, images }) {
       }
     });
   }, []);
+  console.log(data);
   return (
     <>
       {data!== undefined && <MetaDecorator title={`Toroto - ${data.location}`} />}

@@ -1,21 +1,23 @@
-.add-project{
+.add-project {
   margin: 32px 0;
   width: 100%;
-  &__title{
-    @include fontStyling(normal,normal,34px,36px,$torotoGrey1);
-    // font-size: 34px;
-    // line-height: 36px;
-    // color: $torotoGrey1;
-    // font-style: normal;
-    // font-weight: normal;
+  &__title {
+    @include fontStyling(normal, normal, 34px, 36px, $torotoGrey1);
   }
-  &__description{
-    @include fontStyling(normal,normal,16px,24px,$torotoGrey1);
-    // font-size: 16px;
-    // line-height: 24px;
-    // color: $torotoGrey1;
-    // font-style: normal;
-    // font-weight: normal;
+  &__description {
+    @include fontStyling(normal, normal, 16px, 24px, $torotoGrey1);
   }
-  
+}
+
+@media screen and (max-width: 780px) {
+  .add-project {
+    margin: 10px 10px;
+    &__title {
+      @include fontStyling(normal, normal, 32px, 34px, $torotoGrey1);
+    }
+    &__description {
+      width: 90%;
+      @include fontStyling(normal, normal, 14px, 20px, $torotoGrey1);
+    }
+  }
 }

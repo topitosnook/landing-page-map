@@ -3,11 +3,6 @@
   height: 748px;
 }
 
-// .popup-map{
-//   width: 1300px;
-//   // background-color: red;
-// }
-
 .container-link {
   width: 100%;
   border: 1px solid $torotoBlack;
@@ -58,4 +53,26 @@
 .mapOverlay {
   z-index: 10;
   margin-top: 56px;
+}
+
+.banner-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 780px) {
+  .map-container {
+    display: none;
+  }
+  .mapOverlay,
+  .mapbox-container,
+  .containerMap {
+    height: 440px;
+    margin-top: 0;
+  }
+  .banner-mobile {
+    display: block;
+    img {
+      height: 290px;
+    }
+  }
 }

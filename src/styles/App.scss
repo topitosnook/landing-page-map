@@ -12,6 +12,7 @@
 // 4. Landing view
 @import './LandingView/mapLanding';
 @import './LandingView/projectLanding';
+@import './LandingView/map-box';
 // 5. Project view
 @import './ProjectView/projectView';
 @import './ProjectView/introSection';
@@ -19,5 +20,3 @@
 @import './ProjectView/accordion';
 @import './ProjectView/gallery';
 @import './ProjectView/modal';
-//6. mapbox
-@import './map-box';

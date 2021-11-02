@@ -21,6 +21,7 @@
   text-align: center;
   height: 180px;
   display: flex;
+
   &__background {
     // height: 90px;
     background-color: $torotoGrey4;
@@ -28,23 +29,39 @@
     display: inline;
     align-self: flex-end;
   }
- 
+  // &__info {
+  //   z-index: 1;
+  //   align-self: flex-start;
+  //   // width: 100%;
+  //   // height: 100%;
+  //   // position: absolute;
+  //   // top: 0;
+  //   // left: 0;
+  // }
+
   &__name {
-    @include fontStyling(normal,500,72px,72px,$torotoBlue);
-    // font-style: normal;
-    // font-weight: 500;
-    // font-size: 72px;
-    // line-height: 72px;
-    // color: $torotoBlue;
+    @include fontStyling(normal, 500, 72px, 72px, $torotoBlue);
     margin: 27px 0;
-    
   }
   &__value {
-    @include fontStyling(normal,bold,20px,24px,$torotoGrey1);
-    // font-style: normal;
-    // font-weight: bold;
-    // font-size: 20px;
-    // line-height: 24px;
-    // color: $torotoGrey1;
+    @include fontStyling(normal, bold, 20px, 24px, $torotoGrey1);
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .impact__cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .impact__card {
+    width: 35%;
+    margin: 10px;
+    &__name {
+      @include fontStyling(normal,bold,48px,56px,$torotoBlue);
+    }
+    &__value {
+      @include fontStyling(normal,bold,16px,20px,$torotoGrey1);
+    }
   }
 }

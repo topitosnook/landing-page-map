@@ -1,10 +1,5 @@
 .problem__title {
-  @include fontStyling(normal,normal,24px,24px,$torotoGrey1);
-  // font-style: normal;
-  // font-weight: normal;
-  // font-size: 24px;
-  // line-height: 24px;
-  // color: $torotoGrey1;
+  @include fontStyling(normal, normal, 24px, 24px, $torotoGrey1);
 }
 
 .problem__description {
@@ -16,12 +11,7 @@
 
 .activities__title {
   margin-top: 5px;
-  @include fontStyling(normal,normal,48px,56px,$torotoBlack);
-  // font-style: normal;
-  // font-weight: normal;
-  // font-size: 48px;
-  // line-height: 56px;
-  // color: $torotoBlack;
+  @include fontStyling(normal, normal, 48px, 56px, $torotoBlack);
 }
 
 .activities__description {
@@ -31,15 +21,16 @@
 }
 
 .map__title {
-  @include fontStyling(normal,normal,24px,24px,$torotoGrey1);
-  // font-style: normal;
-  // font-weight: normal;
-  // color: $torotoGrey1;
-  // font-size: 24px;
-  // line-height: 24px;
+  @include fontStyling(normal, normal, 24px, 24px, $torotoGrey1);
 }
 
 .projectInfo {
   display: flex;
   margin: 20px 0;
+}
+
+@media screen and (max-width: 780px) {
+  .activities__title {
+    @include fontStyling(normal, normal, 42px, 46px, $torotoBlack);
+  }
 }

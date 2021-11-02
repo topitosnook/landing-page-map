@@ -19,45 +19,29 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
   flex-direction: column;
-  // padding: 25px;
+
 }
 .modalInfo {
   padding: 0 25px;
 }
 .modal__title {
   @include fontStyling(normal,400,34px,36px,$torotoBlack);
-  // font-weight: 400;
-  // font-style: normal;
-  // font-size: 34px;
-  // line-height: 36px;
-  // color: $torotoBlack;
+
 }
 .modal__description {
   @include fontStyling(normal,normal,16px,24px,$torotoGrey1);
-  // font-weight: normal;
-  // font-style: normal;
-  // font-size: 16px;
-  // line-height: 24px;
-  // color: $torotoGrey1;
+
 }
 .list__title {
   @include fontStyling(normal,500,20px,24px,$torotoGrey1);
-  // font-weight: 500;
-  // font-style: normal;
-  // font-size: 20px;
-  // line-height: 24px;
-  // color: $torotoGrey1;
+
 }
 
 .modal__list {
   padding-left: 25px;
   li {
     @include fontStyling(normal,normal,16px,24px,$torotoGrey1);
-    // font-weight: normal;
-    // font-style: normal;
-    // font-size: 16px;
-    // line-height: 24px;
-    // color: $torotoGrey1;
+
     margin: 4px 0;
   }
 }
@@ -86,11 +70,7 @@
   z-index: 1;
   padding: 5px;
   @include fontStyling(normal,normal,16px,24px,$torotoWhite);
-  // font-weight: normal;
-  // font-style: normal;
-  // font-size: 16px;
-  // line-height: 24px;
-  // color: $torotoWhite;
+
 }
 
 .modal__buttons{

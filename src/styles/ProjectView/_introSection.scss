@@ -4,7 +4,7 @@
 }
 
 .intro__location {
-  @include fontStyling(normal,normal,24px,24px,$torotoGrey1);
+  @include fontStyling(normal, normal, 24px, 24px, $torotoGrey1);
   // color: $torotoGrey1;
   // font-style: normal;
   // font-weight: normal;
@@ -13,7 +13,7 @@
 }
 
 .intro__name {
-  @include fontStyling(normal,normal,48px,56px,$torotoGrey1);
+  @include fontStyling(normal, normal, 48px, 56px, $torotoGrey1);
   // color: $torotoGrey1;
   // font-style: normal;
   // font-weight: normal;
@@ -22,7 +22,7 @@
 }
 
 .intro__description {
-  @include fontStyling(normal,500,20px,24px,$torotoGrey2);
+  @include fontStyling(normal, 500, 20px, 24px, $torotoGrey2);
   // color: $torotoGrey2;
   // font-style: normal;
   // font-weight: 500;
@@ -35,4 +35,20 @@
   height: auto;
   width: 45%;
   margin: 10px;
+}
+@media screen and (max-width: 780px) {
+  .intro-section {
+    flex-direction: column-reverse;
+    div {
+      margin-top: 10px;
+    }
+  }
+  .intro__image {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 0;
+  }
+
+ 
 }
