@@ -7,7 +7,7 @@ export default function NavBar() {
   return (
     <nav className='navbar'>
       <div>
-        <Link to='/'>
+        <Link to='/landing-page-map/'>
           <img className='logo' src={logo} alt='Toroto' />
         </Link>
       </div>
