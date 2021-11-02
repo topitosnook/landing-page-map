@@ -1,6 +1,6 @@
 .modalBackground {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(200, 200, 200, 0.1);
   position: fixed; /* Stay in place */
   left: 0;
@@ -9,6 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-y: hidden;
 }
 
 .modalContainer {
@@ -19,29 +20,28 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
   flex-direction: column;
-
 }
+
 .modalInfo {
   padding: 0 25px;
 }
+
 .modal__title {
-  @include fontStyling(normal,400,34px,36px,$torotoBlack);
-
+  @include fontStyling(normal, 400, 34px, 36px, $torotoBlack);
 }
+
 .modal__description {
-  @include fontStyling(normal,normal,16px,24px,$torotoGrey1);
-
+  @include fontStyling(normal, normal, 16px, 24px, $torotoGrey1);
 }
-.list__title {
-  @include fontStyling(normal,500,20px,24px,$torotoGrey1);
 
+.list__title {
+  @include fontStyling(normal, 500, 20px, 24px, $torotoGrey1);
 }
 
 .modal__list {
   padding-left: 25px;
   li {
-    @include fontStyling(normal,normal,16px,24px,$torotoGrey1);
-
+    @include fontStyling(normal, normal, 16px, 24px, $torotoGrey1);
     margin: 4px 0;
   }
 }
@@ -69,10 +69,58 @@
   border: none;
   z-index: 1;
   padding: 5px;
-  @include fontStyling(normal,normal,16px,24px,$torotoWhite);
-
+  @include fontStyling(normal, normal, 16px, 24px, $torotoWhite);
 }
 
-.modal__buttons{
+.modal__buttons {
   display: flex;
+}
+
+@media screen and (max-width: 780px) {
+  .modalBackground {
+    align-items: flex-start;
+  }
+  .modalContainer {
+    height: 500px;
+    width: 100%;
+  }
+  .modal__title {
+    margin-top: 20px;
+    @include fontStyling(normal, bold, 16px, 20px, $torotoBlack);
+  }
+  .modal__description {
+    margin-top: 20px;
+    @include fontStyling(normal, normal, 12px, 14px, $torotoGrey1);
+  }
+
+  .list__title {
+    margin-top: 15px;
+    @include fontStyling(normal, 500, 16px, 20px, $torotoGrey1);
+  }
+  .modal__list {
+    padding-left: 25px;
+    margin-top: 15px;
+    li {
+      @include fontStyling(normal, normal, 12px, 14px, $torotoGrey1);
+      margin: 4px 0;
+    }
+  }
+  .modal__banner {
+    height: 40px;
+    img {
+      display: none;
+    }
+  }
+  .modal__closebtn {
+    margin: 15px;
+    @include fontStyling(normal, normal, 12px, 14px, $torotoBlack);
+  }
+  .modal__buttons {
+    flex-direction: column;
+    button {
+      height: 38px;
+      margin: 0;
+      margin-top: 20px;
+    }
+  }
 }
