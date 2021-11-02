@@ -9,14 +9,21 @@
   margin: 22px 0;
 }
 
-
 .map__title {
   @include fontStyling(normal, normal, 24px, 24px, $torotoGrey1);
+}
+.map__image {
+  width: 100%;
+  border-radius: 20px;
+  margin: 32px 0;
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
 }
 
 .projectInfo {
   display: flex;
   margin: 20px 0;
 }
-
-

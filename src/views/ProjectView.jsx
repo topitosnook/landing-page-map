@@ -8,6 +8,7 @@ import BoxImpact from '../components/BoxImpact';
 import Accordion from '../components/Accordion';
 import Tooltip from '../assets/icons/svg/tooltip_icon.svg';
 import ModalInfo from '../components/ModalInfo';
+import mapaObras from'../assets/img/map.png';
 
 export default function ProjectView({ dataProjects, images }) {
   const projectPath = window.location.pathname.substring(1);
@@ -53,7 +54,9 @@ export default function ProjectView({ dataProjects, images }) {
             </section>
             <section className='map'>
               <h2 className='map__title'>Mapa de obras</h2>
-              <div className='map__image'></div>
+              <div className='map__image'>
+                <img src={mapaObras} alt="mapa de obras" />
+              </div>
             </section>
             <section className='gallery-section'>
               <h2 className='gallery__title'>Galeria de imágenes</h2>

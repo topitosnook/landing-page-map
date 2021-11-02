@@ -6,11 +6,7 @@
   border: none;
   border-radius: 5px;
   @include fontStyling(normal, 500, 14px, 16px, $torotoWhite);
-  // font-size: 14px;
-  // line-height: 16px;
-  // font-style: normal;
-  // font-weight: 500;
-  // color: $torotoWhite;
+
 }
 
 .dark {
