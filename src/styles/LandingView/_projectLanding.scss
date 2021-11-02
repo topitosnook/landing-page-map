@@ -2,14 +2,10 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
   &__title {
     @include fontStyling(normal, normal, 48px, 56px, $torotoBlack);
     margin: 32px 0;
-    // color: $torotoBlack;
-    // font-style: normal;
-    // font-weight: normal;
-    // font-size: 48px;
-    // line-height: 56px;
   }
 }
 
@@ -70,4 +66,25 @@
   flex-direction: column;
   justify-content: flex-start;
   line-height: 1.6;
+}
+
+@media screen and (max-width: 780px) {
+  .project-section {
+    &__title {
+      margin: 10px 0;
+      @include fontStyling(normal, normal, 24px, 28px, $torotoBlack);
+    }
+  }
+  .project-card{
+    min-height: 400px;
+    &__location{
+      @include fontStyling(normal, 500, 12px, 14px, $torotoBlack);
+    }
+    &__name{
+      @include fontStyling(normal, 500, 16px, 20px, $torotoBlack);
+    }
+    &__description{
+      @include fontStyling(normal, normal, 12px, 14px, $torotoBlack);
+    }
+  }
 }

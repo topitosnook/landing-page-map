@@ -66,7 +66,7 @@
   .mapOverlay,
   .mapbox-container,
   .containerMap {
-    height: 440px;
+    height: 320px;
     margin-top: 0;
   }
   .banner-mobile {
@@ -74,5 +74,11 @@
     img {
       height: 290px;
     }
+  }
+  .containerMap{
+    margin-top: -20px;
+    border-radius: 20px 20px 0 0;
+    z-index: 10;
+    background-color: $torotoWhite;
   }
 }

@@ -12,8 +12,9 @@
 @media screen and (max-width: 780px) {
   .add-project {
     margin: 10px 10px;
+    text-align: center;
     &__title {
-      @include fontStyling(normal, normal, 32px, 34px, $torotoGrey1);
+      @include fontStyling(normal, normal, 24px, 28px, $torotoGrey1);
     }
     &__description {
       width: 90%;

@@ -27,4 +27,7 @@
   .tag__name{
     @include fontStyling(normal, 500, 12px, 14px, $torotoBlack);
   }
+  // .tag{
+  //   display: none;
+  // }
 }

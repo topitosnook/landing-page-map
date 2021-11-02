@@ -230,12 +230,13 @@
 @media screen and (max-width: 780px) {
   .add-project {
     margin: 10px 10px;
+    text-align: center;
   }
   .add-project__title {
     font-style: normal;
     font-weight: normal;
-    font-size: 32px;
-    line-height: 34px;
+    font-size: 24px;
+    line-height: 28px;
     color: #333333;
   }
   .add-project__description {
@@ -277,12 +278,6 @@
   background-color: #ffffff;
   color: #373737;
   border: none;
-}
-
-@media screen and (max-width: 780px) {
-  .add-project__button {
-    width: 90%;
-  }
 }
 
 .containerMap {
@@ -332,6 +327,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .project-section__title {
@@ -431,6 +427,41 @@
   line-height: 1.6;
 }
 
+@media screen and (max-width: 780px) {
+  .project-section__title {
+    margin: 10px 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #373737;
+  }
+  .project-card {
+    min-height: 400px;
+  }
+  .project-card__location {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #373737;
+  }
+  .project-card__name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #373737;
+  }
+  .project-card__description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #373737;
+  }
+}
+
 .map-container {
   margin-top: 56px;
   height: 748px;
@@ -507,7 +538,7 @@
   .mapOverlay,
   .mapbox-container,
   .containerMap {
-    height: 440px;
+    height: 320px;
     margin-top: 0;
   }
   .banner-mobile {
@@ -515,6 +546,12 @@
   }
   .banner-mobile img {
     height: 290px;
+  }
+  .containerMap {
+    margin-top: -20px;
+    border-radius: 20px 20px 0 0;
+    z-index: 10;
+    background-color: #ffffff;
   }
 }
 
