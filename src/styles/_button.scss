@@ -1,0 +1,30 @@
+.add-project__button {
+  height: 48px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: $torotoBlack;
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  color: $torotoWhite;
+  margin: 10px 0;
+}
+
+.dark {
+  background-color: $torotoBlack;
+  color: $torotoWhite;
+}
+
+.light {
+  background-color: $torotoWhite;
+  color: $torotoBlack;
+  border: 1px solid $torotoBlack;
+}
+
+.nude{
+  background-color: $torotoWhite;
+  color: $torotoBlack;
+  border: none;
+}

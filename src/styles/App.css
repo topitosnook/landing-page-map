@@ -229,6 +229,23 @@
   margin: 10px 0;
 }
 
+.dark {
+  background-color: #373737;
+  color: #ffffff;
+}
+
+.light {
+  background-color: #ffffff;
+  color: #373737;
+  border: 1px solid #373737;
+}
+
+.nude {
+  background-color: #ffffff;
+  color: #373737;
+  border: none;
+}
+
 .containerMap {
   height: 748px;
 }
@@ -649,9 +666,9 @@
 
 .modalContainer {
   width: 500px;
-  height: 500px;
-  border-radius: 12px;
-  background-color: #f2f2f2;
+  height: 550px;
+  border-radius: 20px;
+  background-color: #ffffff;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: -webkit-box;
@@ -661,7 +678,89 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 25px;
+}
+
+.modalInfo {
+  padding: 0 25px;
+}
+
+.modal__title {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 34px;
+  line-height: 36px;
+  color: #373737;
+}
+
+.modal__description {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.list__title {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.modal__list {
+  padding-left: 25px;
+}
+
+.modal__list li {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  margin: 4px 0;
+}
+
+.modal__banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 156px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.modal__img {
+  left: 50%;
+  margin-left: -280px;
+  margin-top: -220px;
+  position: absolute;
+}
+
+.modal__closebtn {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  z-index: 1;
+  padding: 5px;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.modal__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .map-container {

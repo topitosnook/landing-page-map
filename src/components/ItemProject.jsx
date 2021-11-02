@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ButtonSeeProject from './ButtonSeeProject';
+import ButtonProject from './ButtonProject';
 import ItemTag from './ItemTag';
 
 export default function ItemProject({ project, image }) {
@@ -20,7 +20,7 @@ export default function ItemProject({ project, image }) {
           </div>
         </div>
         <Link to={'/' + project.id}>
-          <ButtonSeeProject name={'VER PROYECTO COMPLETO'} />
+          <ButtonProject name={'VER PROYECTO COMPLETO'} classType={'light'} />
         </Link>
       </div>
     </section>

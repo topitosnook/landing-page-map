@@ -13,8 +13,6 @@ export default function ProjectView({ dataProjects, images }) {
   const projectPath = window.location.pathname.substring(1);
   const [data, setData] = useState();
   const [index, setIndex] = useState();
-
-  // for modal
   const [openModal,setOpenModal] = useState(false);
 
   useEffect(() => {
@@ -27,7 +25,7 @@ export default function ProjectView({ dataProjects, images }) {
   }, []);
   return (
     <>
-      <MetaDecorator title='Toroto - proyecto' />
+      {data!== undefined && <MetaDecorator title={`Toroto - ${data.location}`} />}
       <NavBar />
       <main className='content-wrap'>
         {data !== undefined && (

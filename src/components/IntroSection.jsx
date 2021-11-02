@@ -1,4 +1,5 @@
 import React from 'react';
+import ButtonProject from './ButtonProject';
 
 export default function IntroSection() {
   return (
@@ -9,7 +10,7 @@ export default function IntroSection() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque inventore aliquid mollitia, alias aperiam dolorum sunt! Eligendi optio
           nemo, dolorem ducimus sunt officia eaque sint suscipit porro animi, dicta labore.
         </p>
-        <button className='add-project__button'>Proponer un proyecto</button>
+        <ButtonProject name="PROPONER UN PROYECTO" classType={'dark'}/>
       </section>
     </>
   );
