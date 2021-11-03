@@ -1,9 +1,11 @@
 .add-project {
   margin: 32px 0;
   width: 100%;
+
   &__title {
     @include fontStyling(normal, normal, 34px, 36px, $torotoGrey1);
   }
+
   &__description {
     @include fontStyling(normal, normal, 16px, 24px, $torotoGrey1);
   }
@@ -13,9 +15,11 @@
   .add-project {
     margin: 10px 10px;
     text-align: center;
+
     &__title {
       @include fontStyling(normal, normal, 24px, 28px, $torotoGrey1);
     }
+    
     &__description {
       width: 90%;
       @include fontStyling(normal, normal, 14px, 20px, $torotoGrey1);

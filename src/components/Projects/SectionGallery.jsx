@@ -1,7 +1,7 @@
 import React from 'react';
 import { ModalGallery } from '../ModalInfo';
 
-export default function SectionGallery({data, openModal, setOpenModal}) {
+export default function SectionGallery({ data, openModal, setOpenModal }) {
   return (
     <section className='gallery-section'>
       <h2 className='gallery__title'>Galeria de imágenes</h2>

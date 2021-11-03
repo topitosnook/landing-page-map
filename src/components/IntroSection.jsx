@@ -10,7 +10,7 @@ export default function IntroSection() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque inventore aliquid mollitia, alias aperiam dolorum sunt! Eligendi optio
           nemo, dolorem ducimus sunt officia eaque sint suscipit porro animi, dicta labore.
         </p>
-        <ButtonProject name="PROPONER UN PROYECTO" classType={'dark'}/>
+        <ButtonProject name='PROPONER UN PROYECTO' classType={'dark'} />
       </section>
     </>
   );

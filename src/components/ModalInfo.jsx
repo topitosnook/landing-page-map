@@ -46,7 +46,7 @@ function ModalGallery({ closeModal, image }) {
   return (
     <div className='modalBackground'>
       <div className='modalContainerGallery'>
-        <div className="gallery-close-banner">
+        <div className='gallery-close-banner'>
           <button className='gallery-close' onClick={() => closeModal(false)}>
             X
           </button>

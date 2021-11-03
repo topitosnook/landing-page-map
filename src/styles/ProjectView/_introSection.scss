@@ -21,10 +21,12 @@
   width: 45%;
   margin: 10px;
 }
+
 @media screen and (max-width: 780px) {
   .intro-section {
     flex-direction: column-reverse;
     margin: 0;
+
     .intro-section__info {
       margin-top: 10px;
       border-radius: 20px 20px 0 0;
@@ -34,12 +36,14 @@
       z-index: 10;
     }
   }
+
   .intro__image {
     width: 100%;
     height: auto;
     margin: 0;
     border-radius: 0;
   }
+
   .intro__location {
     @include fontStyling(normal, normal, 14px, 16px, $torotoGrey1);
   }
@@ -51,15 +55,16 @@
   .intro__description {
     @include fontStyling(normal, 500, 12px, 14px, $torotoGrey2);
   }
+
   .problem {
     margin-top: 40px;
+
     &__title {
       @include fontStyling(normal, normal, 14px, 16px, $torotoGrey1);
     }
-    &__description{
-      @include fontStyling(normal, normal, 14px, 16px, $torotoGrey1);
 
+    &__description {
+      @include fontStyling(normal, normal, 14px, 16px, $torotoGrey1);
     }
   }
-  
 }

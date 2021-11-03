@@ -18,11 +18,11 @@
 }
 
 .project-card {
-  display: flex;
-  flex-direction: column;
   width: 452px;
   height: auto; //172 + 372
   min-height: 650px;
+  display: flex;
+  flex-direction: column;
   border-radius: 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -39,9 +39,7 @@
 }
 
 .project-card__cover {
-  // width: 448px;
   height: 322px;
-  // margin: 24px 32px 0 32px;
   padding: 32px 10px;
   display: flex;
   flex-direction: column;
@@ -75,15 +73,19 @@
       @include fontStyling(normal, normal, 24px, 28px, $torotoBlack);
     }
   }
-  .project-card{
+
+  .project-card {
     min-height: 400px;
-    &__location{
+    
+    &__location {
       @include fontStyling(normal, 500, 12px, 14px, $torotoBlack);
     }
-    &__name{
+
+    &__name {
       @include fontStyling(normal, 500, 16px, 20px, $torotoBlack);
     }
-    &__description{
+
+    &__description {
       @include fontStyling(normal, normal, 12px, 14px, $torotoBlack);
     }
   }

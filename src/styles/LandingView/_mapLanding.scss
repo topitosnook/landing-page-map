@@ -3,25 +3,25 @@
 }
 
 .intro {
-  // height: 300px;
   width: 336px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  margin: 10px;
   text-align: justify;
   flex: 1;
 }
 
 .moreProjects {
-  height: 50px;
   width: 100%;
+  height: 50px;
   text-align: center;
   position: absolute;
   bottom: 0;
   flex: none;
-  // align-self: flex-end;
 }
-.mapOverlay,.moreProjects,.intro{
+.mapOverlay,
+.moreProjects,
+.intro {
   pointer-events: none;
 }

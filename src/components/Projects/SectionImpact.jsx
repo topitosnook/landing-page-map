@@ -1,7 +1,7 @@
 import React from 'react';
 import BoxImpact from '../BoxImpact';
 
-export default function SectionImpact({data}) {
+export default function SectionImpact({ data }) {
   return (
     <section className='impact-section'>
       <h1 className='impact__title'>Impacto</h1>

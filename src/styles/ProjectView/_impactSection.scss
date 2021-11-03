@@ -11,10 +11,7 @@
 }
 
 .impact__title {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 48px;
-  line-height: 56px;
+  @include fontStyling(normal, normal, 48px, 56px, $torotoGrey1);
 }
 
 .impact__card {
@@ -33,9 +30,8 @@
   }
 
   &__info {
-    height:100% ;
+    height: 100%;
     z-index: 10;
-    // margin: 10px;
     display: flex;
     flex-direction: column;
     align-self: flex-end;
@@ -48,6 +44,7 @@
     flex-direction: column;
     flex: 1;
   }
+
   &__value {
     @include fontStyling(normal, bold, 20px, 20px, $torotoGrey1);
     width: 165px;
@@ -61,12 +58,15 @@
     flex-wrap: wrap;
     width: 100%;
   }
+
   .impact__card {
     width: 35%;
     margin: 10px;
+
     &__name {
       @include fontStyling(normal, bold, 48px, 56px, $torotoBlue);
     }
+
     &__value {
       @include fontStyling(normal, bold, 16px, 20px, $torotoGrey1);
     }

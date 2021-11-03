@@ -3,7 +3,7 @@ import Accordion from './Accordion';
 import { ModalInfo } from '../ModalInfo';
 import Tooltip from '../../assets/icons/svg/tooltip_icon.svg';
 
-export default function SectionActivities({openModal, setOpenModal, data}) {
+export default function SectionActivities({ openModal, setOpenModal, data }) {
   return (
     <>
       {data !== undefined && (

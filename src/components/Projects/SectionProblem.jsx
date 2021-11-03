@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function SectionProblem({data}) {
+export default function SectionProblem({ data }) {
   return (
     <section className='problem'>
       <h1 className='problem__title'>Problemática</h1>

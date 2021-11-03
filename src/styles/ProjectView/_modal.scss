@@ -40,6 +40,7 @@
 
 .modal__list {
   padding-left: 25px;
+
   li {
     @include fontStyling(normal, normal, 16px, 24px, $torotoGrey1);
     margin: 4px 0;
@@ -80,14 +81,17 @@
   .modalBackground {
     align-items: flex-start;
   }
+
   .modalContainer {
     height: 500px;
     width: 100%;
   }
+
   .modal__title {
     margin-top: 20px;
     @include fontStyling(normal, bold, 16px, 20px, $torotoBlack);
   }
+
   .modal__description {
     margin-top: 20px;
     @include fontStyling(normal, normal, 12px, 14px, $torotoGrey1);
@@ -97,26 +101,32 @@
     margin-top: 15px;
     @include fontStyling(normal, 500, 16px, 20px, $torotoGrey1);
   }
+
   .modal__list {
     padding-left: 25px;
     margin-top: 15px;
+
     li {
       @include fontStyling(normal, normal, 12px, 14px, $torotoGrey1);
       margin: 4px 0;
     }
   }
+
   .modal__banner {
     height: 40px;
     img {
       display: none;
     }
   }
+
   .modal__closebtn {
     margin: 15px;
     @include fontStyling(normal, normal, 12px, 14px, $torotoBlack);
   }
+
   .modal__buttons {
     flex-direction: column;
+
     button {
       height: 38px;
       margin: 0;

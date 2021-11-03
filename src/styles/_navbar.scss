@@ -6,7 +6,6 @@
   height: 56px;
   background-color: $torotoBlue;
   color: $torotoWhite;
-  // position: fixed;
 }
 
 .navLinks {
@@ -54,6 +53,7 @@
   .navLinks {
     display: none;
   }
+
   .navLinksMobile {
     position: absolute;
     display: block;
@@ -63,6 +63,7 @@
     top: 75px;
     transition: all 0.5s ease-out;
     width: 100%;
+
     li {
       color: $torotoWhite;
       text-align: center;
@@ -70,10 +71,12 @@
       width: 100%;
       transition: all 0.5s ease;
     }
+
     .contacto {
       border: none;
     }
   }
+  
   .mobile-menu-icon {
     display: block;
     position: absolute;
