@@ -7,7 +7,7 @@ export default function Mapbox({ dataProjects, images }) {
   const mapContainer = useRef(null);
   const map = useRef(null);
   const [lng, setLng] = useState(-108.8548);
-  const [lat, setLat] = useState(15.9856);
+  const [lat, setLat] = useState(22.9856);
   const [zoom, setZoom] = useState(4);
   useEffect(() => {
     const map = new mapboxgl.Map({

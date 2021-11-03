@@ -6,7 +6,7 @@
   height: 56px;
   background-color: $torotoBlue;
   color: $torotoWhite;
-  position: fixed;
+  // position: fixed;
 }
 
 .navLinks {
@@ -38,19 +38,19 @@
   height: 32px;
   background-color: $torotoWhite;
   color: $torotoBlack;
+  padding-top: 5px;
 }
 
 .mobile-menu-icon {
   display: none;
 }
 
-.logo{
-  width: 100px ;
+.logo {
+  width: 100px;
   height: auto;
 }
 
 @media screen and (max-width: 780px) {
-
   .navLinks {
     display: none;
   }
