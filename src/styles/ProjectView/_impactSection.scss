@@ -61,13 +61,21 @@
 
   .impact__card {
     width: 35%;
-    margin: 10px;
-
+    // margin: 10px;
+    &__background {
+    width: 126px;
+    }
+    &__info{
+      width:126px;
+    }
     &__name {
       @include fontStyling(normal, bold, 48px, 56px, $torotoBlue);
+      padding-top: 20px;
     }
 
     &__value {
+      width: 126px;
+
       @include fontStyling(normal, bold, 16px, 20px, $torotoGrey1);
     }
   }

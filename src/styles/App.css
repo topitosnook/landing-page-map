@@ -22,7 +22,6 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-top: 56px;
   padding: 0 100px;
 }
 
@@ -545,6 +544,7 @@
     display: block;
   }
   .banner-mobile img {
+    width: 360px;
     height: 290px;
   }
   .containerMap {
@@ -601,7 +601,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px 0;
 }
 
 .intro__location {
@@ -791,7 +790,12 @@
   }
   .impact__card {
     width: 35%;
-    margin: 10px;
+  }
+  .impact__card__background {
+    width: 126px;
+  }
+  .impact__card__info {
+    width: 126px;
   }
   .impact__card__name {
     font-style: normal;
@@ -799,8 +803,10 @@
     font-size: 48px;
     line-height: 56px;
     color: #1a30db;
+    padding-top: 20px;
   }
   .impact__card__value {
+    width: 126px;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
