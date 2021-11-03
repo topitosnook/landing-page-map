@@ -41,7 +41,7 @@ export default function Mapbox({ dataProjects, images }) {
         .setPopup(
           new mapboxgl.Popup({ id: `${id}`, className: 'popup-map', anchor: 'bottom' })
             .setHTML(`<img class="popup-img" src="${images[0]}"><p class="popup__location">${project.location}</p><h1 class="popup__name">${project.name}</h1>
-        <p class="popup__description">${project.description}</p> <div class="container-link"><a class="link-page" href="/${project.id}">VER PROYECTO COMPLETO</a><div>`)
+        <p class="popup__description">${project.description}</p> <div class="container-link"><a class="link-page" href="/landing-page-map/${project.id}">VER PROYECTO COMPLETO</a><div>`)
         )
         .addTo(map.current);
     });
