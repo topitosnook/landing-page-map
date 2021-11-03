@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import chevron from '../assets/icons/svg/chevron-down.svg';
 import IntroSection from './IntroSection';
 import Mapbox from './Mapbox';

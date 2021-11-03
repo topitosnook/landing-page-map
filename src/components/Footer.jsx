@@ -1,10 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import instagram from '../assets/icons/svg/instagram_icon.svg';
 import facebook from '../assets/icons/svg/facebook_icon.svg';
 import linkedin from '../assets/icons/svg/linkedin_icon.svg';
 import twitter from '../assets/icons/svg/twitter_icon.svg';
 import logo from '../assets/icons/svg/logo.svg';
-import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
